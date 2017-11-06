@@ -2,8 +2,8 @@
 //  GetHotelsUITests.m
 //  GetHotelsUITests
 //
-//  Created by admin on 2017/11/2.
-//  Copyright © 2017年 admin2. All rights reserved.
+//  Created by admin1 on 2017/10/31.
+//  Copyright © 2017年 Education. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
