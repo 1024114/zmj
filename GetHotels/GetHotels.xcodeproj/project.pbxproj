@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84B8D49B1FB0092500809F63 /* HotelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8D49A1FB0092500809F63 /* HotelsViewController.m */; };
-		84B8D49E1FB00BD600809F63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B8D49D1FB00BD600809F63 /* Main.storyboard */; };
-		84B8D4A11FB00D8400809F63 /* CityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B8D4A01FB00D8400809F63 /* CityTableViewController.m */; };
+		84D1BF661FB0507000FD662C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D1BF5C1FB0507000FD662C /* Main.storyboard */; };
+		84D1BF671FB0507000FD662C /* Pay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D1BF5D1FB0507000FD662C /* Pay.storyboard */; };
+		84D1BF681FB0507000FD662C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D1BF5E1FB0507000FD662C /* Login.storyboard */; };
+		84D1BF691FB0507000FD662C /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D1BF5F1FB0507000FD662C /* Mine.storyboard */; };
+		84D1BF6A1FB0507000FD662C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D1BF601FB0507000FD662C /* Assets.xcassets */; };
+		84D1BF6B1FB0507000FD662C /* Hotel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D1BF621FB0507000FD662C /* Hotel.storyboard */; };
+		84D1BF6C1FB0507000FD662C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D1BF641FB0507000FD662C /* LaunchScreen.storyboard */; };
+		84D1BF741FB0507C00FD662C /* CityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1BF6F1FB0507C00FD662C /* CityTableViewController.m */; };
+		84D1BF751FB0507C00FD662C /* HotelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1BF711FB0507C00FD662C /* HotelsViewController.m */; };
+		84D1BF761FB0507C00FD662C /* LoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1BF721FB0507C00FD662C /* LoginTableViewController.m */; };
 		84D770261FB0312A00CDD7C3 /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D770251FB0312A00CDD7C3 /* Cities.plist */; };
 		A9F2880F98E3BC418C7A295B /* libPods-GetHotels.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC764E2D0B3FE5C953A0EA2B /* libPods-GetHotels.a */; };
 		B2252A451FAB02F500018B1C /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = B2252A401FAB02F500018B1C /* BasicEncodingRules.m */; };
@@ -32,10 +39,7 @@
 		B2252A7F1FAB059F00018B1C /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = B2252A6C1FAB059D00018B1C /* StorageMgr.m */; };
 		B2252A801FAB059F00018B1C /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B2252A6E1FAB059D00018B1C /* Utilities.m */; };
 		B26D932F1FA80AC3008F6715 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D932E1FA80AC3008F6715 /* AppDelegate.m */; };
-		B26D93351FA80AC3008F6715 /* Hotel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26D93331FA80AC3008F6715 /* Hotel.storyboard */; };
 		B26D93381FA80AC3008F6715 /* GetHotels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B26D93361FA80AC3008F6715 /* GetHotels.xcdatamodeld */; };
-		B26D933A1FA80AC3008F6715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26D93391FA80AC3008F6715 /* Assets.xcassets */; };
-		B26D933D1FA80AC3008F6715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26D933B1FA80AC3008F6715 /* LaunchScreen.storyboard */; };
 		B26D93401FA80AC3008F6715 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D933F1FA80AC3008F6715 /* main.m */; };
 		B26D934A1FA80AC4008F6715 /* GetHotelsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D93491FA80AC4008F6715 /* GetHotelsTests.m */; };
 		B26D93551FA80AC4008F6715 /* GetHotelsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D93541FA80AC4008F6715 /* GetHotelsUITests.m */; };
@@ -64,11 +68,19 @@
 /* Begin PBXFileReference section */
 		595A8923C5E5A46B4E74E0FD /* Pods-GetHotels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetHotels.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetHotels/Pods-GetHotels.release.xcconfig"; sourceTree = "<group>"; };
 		7D532D60D38CE01E51BAB8ED /* Pods-GetHotels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetHotels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetHotels/Pods-GetHotels.debug.xcconfig"; sourceTree = "<group>"; };
-		84B8D4991FB0092500809F63 /* HotelsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotelsViewController.h; sourceTree = "<group>"; };
-		84B8D49A1FB0092500809F63 /* HotelsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotelsViewController.m; sourceTree = "<group>"; };
-		84B8D49D1FB00BD600809F63 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		84B8D49F1FB00D8400809F63 /* CityTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityTableViewController.h; sourceTree = "<group>"; };
-		84B8D4A01FB00D8400809F63 /* CityTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityTableViewController.m; sourceTree = "<group>"; };
+		84D1BF5C1FB0507000FD662C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = View/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		84D1BF5D1FB0507000FD662C /* Pay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Pay.storyboard; path = View/Pay.storyboard; sourceTree = SOURCE_ROOT; };
+		84D1BF5E1FB0507000FD662C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = View/Login.storyboard; sourceTree = SOURCE_ROOT; };
+		84D1BF5F1FB0507000FD662C /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Mine.storyboard; path = View/Mine.storyboard; sourceTree = SOURCE_ROOT; };
+		84D1BF601FB0507000FD662C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = View/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		84D1BF631FB0507000FD662C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Hotel.storyboard; sourceTree = "<group>"; };
+		84D1BF651FB0507000FD662C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84D1BF6E1FB0507C00FD662C /* CityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewController.h; sourceTree = "<group>"; };
+		84D1BF6F1FB0507C00FD662C /* CityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewController.m; sourceTree = "<group>"; };
+		84D1BF701FB0507C00FD662C /* HotelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelsViewController.h; sourceTree = "<group>"; };
+		84D1BF711FB0507C00FD662C /* HotelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelsViewController.m; sourceTree = "<group>"; };
+		84D1BF721FB0507C00FD662C /* LoginTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginTableViewController.m; path = Controller/LoginTableViewController.m; sourceTree = SOURCE_ROOT; };
+		84D1BF731FB0507C00FD662C /* LoginTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginTableViewController.h; path = Controller/LoginTableViewController.h; sourceTree = SOURCE_ROOT; };
 		84D770251FB0312A00CDD7C3 /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Cities.plist; path = ../../../../../Downloads/Cities.plist; sourceTree = "<group>"; };
 		AC764E2D0B3FE5C953A0EA2B /* libPods-GetHotels.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetHotels.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2252A3C1FAB02F500018B1C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -115,10 +127,7 @@
 		B26D932A1FA80AC3008F6715 /* GetHotels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetHotels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26D932D1FA80AC3008F6715 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B26D932E1FA80AC3008F6715 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B26D93341FA80AC3008F6715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Hotel.storyboard; sourceTree = "<group>"; };
 		B26D93371FA80AC3008F6715 /* GetHotels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GetHotels.xcdatamodel; sourceTree = "<group>"; };
-		B26D93391FA80AC3008F6715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B26D933C1FA80AC3008F6715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B26D933E1FA80AC3008F6715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B26D933F1FA80AC3008F6715 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B26D93451FA80AC4008F6715 /* GetHotelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetHotelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,24 +171,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		848FEE6E1FAFEF430054B2DE /* Controller */ = {
+		84D1BF5A1FB0502800FD662C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				84B8D49C1FB0092A00809F63 /* Hotels */,
+				84D1BF601FB0507000FD662C /* Assets.xcassets */,
+				84D1BF611FB0507000FD662C /* Base.lproj */,
+				84D1BF5E1FB0507000FD662C /* Login.storyboard */,
+				84D1BF5C1FB0507000FD662C /* Main.storyboard */,
+				84D1BF5F1FB0507000FD662C /* Mine.storyboard */,
+				84D1BF5D1FB0507000FD662C /* Pay.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84D1BF5B1FB0503600FD662C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84D1BF6D1FB0507C00FD662C /* Hotels */,
+				84D1BF731FB0507C00FD662C /* LoginTableViewController.h */,
+				84D1BF721FB0507C00FD662C /* LoginTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		84B8D49C1FB0092A00809F63 /* Hotels */ = {
+		84D1BF611FB0507000FD662C /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				84B8D4991FB0092500809F63 /* HotelsViewController.h */,
-				84B8D49A1FB0092500809F63 /* HotelsViewController.m */,
-				84B8D49F1FB00D8400809F63 /* CityTableViewController.h */,
-				84B8D4A01FB00D8400809F63 /* CityTableViewController.m */,
+				84D1BF621FB0507000FD662C /* Hotel.storyboard */,
+				84D1BF641FB0507000FD662C /* LaunchScreen.storyboard */,
 			);
-			path = Hotels;
-			sourceTree = "<group>";
+			name = Base.lproj;
+			path = View/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		84D1BF6D1FB0507C00FD662C /* Hotels */ = {
+			isa = PBXGroup;
+			children = (
+				84D1BF6E1FB0507C00FD662C /* CityTableViewController.h */,
+				84D1BF6F1FB0507C00FD662C /* CityTableViewController.m */,
+				84D1BF701FB0507C00FD662C /* HotelsViewController.h */,
+				84D1BF711FB0507C00FD662C /* HotelsViewController.m */,
+			);
+			name = Hotels;
+			path = Controller/Hotels;
+			sourceTree = SOURCE_ROOT;
 		};
 		B22529E71FAAEE7200018B1C /* Model */ = {
 			isa = PBXGroup;
@@ -187,18 +222,6 @@
 				B26D93361FA80AC3008F6715 /* GetHotels.xcdatamodeld */,
 			);
 			path = Model;
-			sourceTree = SOURCE_ROOT;
-		};
-		B22529E81FAAEE7200018B1C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B26D93331FA80AC3008F6715 /* Hotel.storyboard */,
-				84B8D49D1FB00BD600809F63 /* Main.storyboard */,
-				B26D93391FA80AC3008F6715 /* Assets.xcassets */,
-				B26D933B1FA80AC3008F6715 /* LaunchScreen.storyboard */,
-			);
-			name = View;
-			path = Model/View;
 			sourceTree = SOURCE_ROOT;
 		};
 		B2252A3B1FAB02F500018B1C /* Constant */ = {
@@ -316,9 +339,9 @@
 				B2252A461FAB059D00018B1C /* Utility */,
 				B2252A3D1FAB02F500018B1C /* 3rd */,
 				B2252A3B1FAB02F500018B1C /* Constant */,
+				84D1BF5A1FB0502800FD662C /* View */,
+				84D1BF5B1FB0503600FD662C /* Controller */,
 				B22529E71FAAEE7200018B1C /* Model */,
-				B22529E81FAAEE7200018B1C /* View */,
-				848FEE6E1FAFEF430054B2DE /* Controller */,
 				B26D932D1FA80AC3008F6715 /* AppDelegate.h */,
 				B26D932E1FA80AC3008F6715 /* AppDelegate.m */,
 				B26D933E1FA80AC3008F6715 /* Info.plist */,
@@ -475,11 +498,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B26D933D1FA80AC3008F6715 /* LaunchScreen.storyboard in Resources */,
-				B26D933A1FA80AC3008F6715 /* Assets.xcassets in Resources */,
+				84D1BF6B1FB0507000FD662C /* Hotel.storyboard in Resources */,
+				84D1BF6C1FB0507000FD662C /* LaunchScreen.storyboard in Resources */,
+				84D1BF681FB0507000FD662C /* Login.storyboard in Resources */,
+				84D1BF671FB0507000FD662C /* Pay.storyboard in Resources */,
+				84D1BF691FB0507000FD662C /* Mine.storyboard in Resources */,
 				84D770261FB0312A00CDD7C3 /* Cities.plist in Resources */,
-				B26D93351FA80AC3008F6715 /* Hotel.storyboard in Resources */,
-				84B8D49E1FB00BD600809F63 /* Main.storyboard in Resources */,
+				84D1BF6A1FB0507000FD662C /* Assets.xcassets in Resources */,
+				84D1BF661FB0507000FD662C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,18 +593,19 @@
 				B2252A7E1FAB059F00018B1C /* RequestAPI.m in Sources */,
 				B2252A791FAB059F00018B1C /* ErrorHandler.m in Sources */,
 				B2252A711FAB059F00018B1C /* DataSigner.m in Sources */,
-				84B8D4A11FB00D8400809F63 /* CityTableViewController.m in Sources */,
 				B2252A7D1FAB059F00018B1C /* NSString+Crypt.m in Sources */,
 				B2252A451FAB02F500018B1C /* BasicEncodingRules.m in Sources */,
 				B2252A741FAB059F00018B1C /* NSDataEx.m in Sources */,
+				84D1BF751FB0507C00FD662C /* HotelsViewController.m in Sources */,
 				B26D93401FA80AC3008F6715 /* main.m in Sources */,
-				84B8D49B1FB0092500809F63 /* HotelsViewController.m in Sources */,
 				B2252A751FAB059F00018B1C /* openssl_wrapper.m in Sources */,
 				B2252A7F1FAB059F00018B1C /* StorageMgr.m in Sources */,
 				B26D932F1FA80AC3008F6715 /* AppDelegate.m in Sources */,
 				B2252A7A1FAB059F00018B1C /* NSData+Base64.m in Sources */,
+				84D1BF761FB0507C00FD662C /* LoginTableViewController.m in Sources */,
 				B2252A7B1FAB059F00018B1C /* NSDate+Utility.m in Sources */,
 				B2252A801FAB059F00018B1C /* Utilities.m in Sources */,
+				84D1BF741FB0507C00FD662C /* CityTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,18 +641,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B26D93331FA80AC3008F6715 /* Hotel.storyboard */ = {
+		84D1BF621FB0507000FD662C /* Hotel.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B26D93341FA80AC3008F6715 /* Base */,
+				84D1BF631FB0507000FD662C /* Base */,
 			);
 			name = Hotel.storyboard;
 			sourceTree = "<group>";
 		};
-		B26D933B1FA80AC3008F6715 /* LaunchScreen.storyboard */ = {
+		84D1BF641FB0507000FD662C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B26D933C1FA80AC3008F6715 /* Base */,
+				84D1BF651FB0507000FD662C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
