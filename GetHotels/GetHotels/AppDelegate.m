@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  GetHotels
 //
-//  Created by admin1 on 2017/10/31.
-//  Copyright © 2017年 Education. All rights reserved.
+//  Created by admin on 2017/11/7.
+//  Copyright © 2017年 admin2. All rights reserved.
 //
 
 #import "AppDelegate.h"
