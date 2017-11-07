@@ -23,20 +23,37 @@
 		8434960C1FB13A3F0051D02D /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496061FB13A3F0051D02D /* Mine.storyboard */; };
 		8434960D1FB13A3F0051D02D /* Pay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496071FB13A3F0051D02D /* Pay.storyboard */; };
 		843496101FB13AEF0051D02D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434960F1FB13AEF0051D02D /* MainViewController.m */; };
-		8434962A1FB13D720051D02D /* AppAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 843496131FB13D710051D02D /* AppAPIClient.m */; };
-		8434962B1FB13D720051D02D /* ErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 843496151FB13D710051D02D /* ErrorHandler.m */; };
-		8434962C1FB13D720051D02D /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 843496171FB13D710051D02D /* NSData+Base64.m */; };
-		8434962D1FB13D720051D02D /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 843496191FB13D710051D02D /* NSDate+Utility.m */; };
-		8434962E1FB13D720051D02D /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434961B1FB13D710051D02D /* NSDateFormatter+Category.m */; };
-		8434962F1FB13D720051D02D /* NSString+Crypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434961D1FB13D710051D02D /* NSString+Crypt.m */; };
-		843496301FB13D720051D02D /* RequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434961F1FB13D710051D02D /* RequestAPI.m */; };
-		843496311FB13D720051D02D /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 843496211FB13D710051D02D /* StorageMgr.m */; };
-		843496321FB13D720051D02D /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 843496231FB13D710051D02D /* Utilities.m */; };
-		843496331FB13D720051D02D /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 843496291FB13D720051D02D /* BasicEncodingRules.m */; };
-		843496351FB13E2B0051D02D /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 843496341FB13E2B0051D02D /* Cities.plist */; };
 		843496391FB146040051D02D /* Openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843496381FB146040051D02D /* Openssl.framework */; };
 		8434963D1FB1495F0051D02D /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434963C1FB1495F0051D02D /* MineViewController.m */; };
 		8434963F1FB14B160051D02D /* Aviation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8434963E1FB14B160051D02D /* Aviation.storyboard */; };
+		B203462F1FB18C1600094259 /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346031FB18C1600094259 /* BasicEncodingRules.m */; };
+		B20346301FB18C1600094259 /* GBAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346081FB18C1600094259 /* GBAlipayManager.m */; };
+		B20346311FB18C1600094259 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B203460B1FB18C1600094259 /* base64.m */; };
+		B20346321FB18C1600094259 /* DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = B203460E1FB18C1600094259 /* DataSigner.m */; };
+		B20346331FB18C1600094259 /* DataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346101FB18C1600094259 /* DataVerifier.m */; };
+		B20346341FB18C1600094259 /* MD5DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346121FB18C1600094259 /* MD5DataSigner.m */; };
+		B20346351FB18C1600094259 /* NSDataEx.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346141FB18C1600094259 /* NSDataEx.m */; };
+		B20346361FB18C1600094259 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346161FB18C1600094259 /* openssl_wrapper.m */; };
+		B20346371FB18C1600094259 /* RSADataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346181FB18C1600094259 /* RSADataSigner.m */; };
+		B20346381FB18C1600094259 /* RSADataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B203461A1FB18C1600094259 /* RSADataVerifier.m */; };
+		B20346391FB18C1600094259 /* AppAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B203461C1FB18C1600094259 /* AppAPIClient.m */; };
+		B203463A1FB18C1600094259 /* ErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B203461E1FB18C1600094259 /* ErrorHandler.m */; };
+		B203463B1FB18C1600094259 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346201FB18C1600094259 /* NSData+Base64.m */; };
+		B203463C1FB18C1600094259 /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346221FB18C1600094259 /* NSDate+Utility.m */; };
+		B203463D1FB18C1600094259 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346241FB18C1600094259 /* NSDateFormatter+Category.m */; };
+		B203463E1FB18C1600094259 /* NSString+Crypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346261FB18C1600094259 /* NSString+Crypt.m */; };
+		B203463F1FB18C1600094259 /* RequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346281FB18C1600094259 /* RequestAPI.m */; };
+		B20346401FB18C1600094259 /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = B203462A1FB18C1600094259 /* StorageMgr.m */; };
+		B20346411FB18C1600094259 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B203462C1FB18C1600094259 /* Utilities.m */; };
+		B20346461FB18C4E00094259 /* AlipaySDK.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = B20346421FB18C4D00094259 /* AlipaySDK.bundle */; };
+		B20346471FB18C4E00094259 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B20346431FB18C4E00094259 /* libssl.a */; };
+		B20346481FB18C4E00094259 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20346441FB18C4E00094259 /* AlipaySDK.framework */; };
+		B20346491FB18C4E00094259 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B20346451FB18C4E00094259 /* libcrypto.a */; };
+		B203464C1FB18C7800094259 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = B203464A1FB18C7800094259 /* Order.m */; };
+		B203464E1FB18C9E00094259 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B203464D1FB18C9D00094259 /* libc++.tbd */; };
+		B20346501FB18CA700094259 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B203464F1FB18CA700094259 /* libz.tbd */; };
+		B20346531FB18CE600094259 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20346511FB18CBB00094259 /* CoreTelephony.framework */; };
+		B20346541FB18CF100094259 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20346521FB18CC800094259 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,28 +100,6 @@
 		843496071FB13A3F0051D02D /* Pay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pay.storyboard; sourceTree = "<group>"; };
 		8434960E1FB13AEF0051D02D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8434960F1FB13AEF0051D02D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		843496121FB13D710051D02D /* AppAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAPIClient.h; sourceTree = "<group>"; };
-		843496131FB13D710051D02D /* AppAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAPIClient.m; sourceTree = "<group>"; };
-		843496141FB13D710051D02D /* ErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandler.h; sourceTree = "<group>"; };
-		843496151FB13D710051D02D /* ErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandler.m; sourceTree = "<group>"; };
-		843496161FB13D710051D02D /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		843496171FB13D710051D02D /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		843496181FB13D710051D02D /* NSDate+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utility.h"; sourceTree = "<group>"; };
-		843496191FB13D710051D02D /* NSDate+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utility.m"; sourceTree = "<group>"; };
-		8434961A1FB13D710051D02D /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
-		8434961B1FB13D710051D02D /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
-		8434961C1FB13D710051D02D /* NSString+Crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Crypt.h"; sourceTree = "<group>"; };
-		8434961D1FB13D710051D02D /* NSString+Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Crypt.m"; sourceTree = "<group>"; };
-		8434961E1FB13D710051D02D /* RequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestAPI.h; sourceTree = "<group>"; };
-		8434961F1FB13D710051D02D /* RequestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestAPI.m; sourceTree = "<group>"; };
-		843496201FB13D710051D02D /* StorageMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageMgr.h; sourceTree = "<group>"; };
-		843496211FB13D710051D02D /* StorageMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageMgr.m; sourceTree = "<group>"; };
-		843496221FB13D710051D02D /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
-		843496231FB13D710051D02D /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
-		843496251FB13D710051D02D /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		843496281FB13D720051D02D /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
-		843496291FB13D720051D02D /* BasicEncodingRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicEncodingRules.m; sourceTree = "<group>"; };
-		843496341FB13E2B0051D02D /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Cities.plist; path = ../../../../../Downloads/Cities.plist; sourceTree = "<group>"; };
 		843496371FB143530051D02D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		843496381FB146040051D02D /* Openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Openssl.framework; path = GetHotels/Openssl.framework; sourceTree = "<group>"; };
 		8434963B1FB1495F0051D02D /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
@@ -112,6 +107,57 @@
 		8434963E1FB14B160051D02D /* Aviation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Aviation.storyboard; sourceTree = "<group>"; };
 		8B21A05484BBD2B8008DD3B5 /* Pods-GetHotels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetHotels.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetHotels/Pods-GetHotels.release.xcconfig"; sourceTree = "<group>"; };
 		AE4E6E77482CFC29B893CA0E /* Pods-GetHotels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetHotels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetHotels/Pods-GetHotels.debug.xcconfig"; sourceTree = "<group>"; };
+		B20346021FB18C1600094259 /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
+		B20346031FB18C1600094259 /* BasicEncodingRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicEncodingRules.m; sourceTree = "<group>"; };
+		B20346061FB18C1600094259 /* GBAlipayConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAlipayConfig.h; sourceTree = "<group>"; };
+		B20346071FB18C1600094259 /* GBAlipayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAlipayManager.h; sourceTree = "<group>"; };
+		B20346081FB18C1600094259 /* GBAlipayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAlipayManager.m; sourceTree = "<group>"; };
+		B203460A1FB18C1600094259 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		B203460B1FB18C1600094259 /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
+		B203460C1FB18C1600094259 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B203460D1FB18C1600094259 /* DataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSigner.h; sourceTree = "<group>"; };
+		B203460E1FB18C1600094259 /* DataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSigner.m; sourceTree = "<group>"; };
+		B203460F1FB18C1600094259 /* DataVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataVerifier.h; sourceTree = "<group>"; };
+		B20346101FB18C1600094259 /* DataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataVerifier.m; sourceTree = "<group>"; };
+		B20346111FB18C1600094259 /* MD5DataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5DataSigner.h; sourceTree = "<group>"; };
+		B20346121FB18C1600094259 /* MD5DataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5DataSigner.m; sourceTree = "<group>"; };
+		B20346131FB18C1600094259 /* NSDataEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataEx.h; sourceTree = "<group>"; };
+		B20346141FB18C1600094259 /* NSDataEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataEx.m; sourceTree = "<group>"; };
+		B20346151FB18C1600094259 /* openssl_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl_wrapper.h; sourceTree = "<group>"; };
+		B20346161FB18C1600094259 /* openssl_wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openssl_wrapper.m; sourceTree = "<group>"; };
+		B20346171FB18C1600094259 /* RSADataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSADataSigner.h; sourceTree = "<group>"; };
+		B20346181FB18C1600094259 /* RSADataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSADataSigner.m; sourceTree = "<group>"; };
+		B20346191FB18C1600094259 /* RSADataVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSADataVerifier.h; sourceTree = "<group>"; };
+		B203461A1FB18C1600094259 /* RSADataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSADataVerifier.m; sourceTree = "<group>"; };
+		B203461B1FB18C1600094259 /* AppAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAPIClient.h; sourceTree = "<group>"; };
+		B203461C1FB18C1600094259 /* AppAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAPIClient.m; sourceTree = "<group>"; };
+		B203461D1FB18C1600094259 /* ErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandler.h; sourceTree = "<group>"; };
+		B203461E1FB18C1600094259 /* ErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandler.m; sourceTree = "<group>"; };
+		B203461F1FB18C1600094259 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		B20346201FB18C1600094259 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		B20346211FB18C1600094259 /* NSDate+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utility.h"; sourceTree = "<group>"; };
+		B20346221FB18C1600094259 /* NSDate+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utility.m"; sourceTree = "<group>"; };
+		B20346231FB18C1600094259 /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
+		B20346241FB18C1600094259 /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
+		B20346251FB18C1600094259 /* NSString+Crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Crypt.h"; sourceTree = "<group>"; };
+		B20346261FB18C1600094259 /* NSString+Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Crypt.m"; sourceTree = "<group>"; };
+		B20346271FB18C1600094259 /* RequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestAPI.h; sourceTree = "<group>"; };
+		B20346281FB18C1600094259 /* RequestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestAPI.m; sourceTree = "<group>"; };
+		B20346291FB18C1600094259 /* StorageMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageMgr.h; sourceTree = "<group>"; };
+		B203462A1FB18C1600094259 /* StorageMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageMgr.m; sourceTree = "<group>"; };
+		B203462B1FB18C1600094259 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		B203462C1FB18C1600094259 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		B203462E1FB18C1600094259 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		B20346421FB18C4D00094259 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = GetHotels/AlipaySDK.bundle; sourceTree = "<group>"; };
+		B20346431FB18C4E00094259 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = GetHotels/libssl.a; sourceTree = "<group>"; };
+		B20346441FB18C4E00094259 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = GetHotels/AlipaySDK.framework; sourceTree = "<group>"; };
+		B20346451FB18C4E00094259 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = GetHotels/libcrypto.a; sourceTree = "<group>"; };
+		B203464A1FB18C7800094259 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		B203464B1FB18C7800094259 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		B203464D1FB18C9D00094259 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B203464F1FB18CA700094259 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B20346511FB18CBB00094259 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B20346521FB18CC800094259 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		FFF36DA43737E7037EF62D4A /* libPods-GetHotels.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetHotels.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,6 +166,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20346541FB18CF100094259 /* CoreMotion.framework in Frameworks */,
+				B20346531FB18CE600094259 /* CoreTelephony.framework in Frameworks */,
+				B20346461FB18C4E00094259 /* AlipaySDK.bundle in Frameworks */,
+				B20346501FB18CA700094259 /* libz.tbd in Frameworks */,
+				B203464E1FB18C9E00094259 /* libc++.tbd in Frameworks */,
+				B20346471FB18C4E00094259 /* libssl.a in Frameworks */,
+				B20346481FB18C4E00094259 /* AlipaySDK.framework in Frameworks */,
+				B20346491FB18C4E00094259 /* libcrypto.a in Frameworks */,
 				843496391FB146040051D02D /* Openssl.framework in Frameworks */,
 				0A28389858EB00863576D4BE /* libPods-GetHotels.a in Frameworks */,
 			);
@@ -167,10 +221,9 @@
 		843495A71FB135430051D02D /* GetHotels */ = {
 			isa = PBXGroup;
 			children = (
-				843496341FB13E2B0051D02D /* Cities.plist */,
-				843496261FB13D720051D02D /* 3rd */,
-				843496241FB13D710051D02D /* Constant */,
-				843496111FB13D710051D02D /* Utility */,
+				B20346001FB18C1600094259 /* 3rd */,
+				B203462D1FB18C1600094259 /* Constant */,
+				B20346041FB18C1600094259 /* Utility */,
 				843495E81FB1391C0051D02D /* Model */,
 				843496011FB13A3F0051D02D /* View */,
 				843495E01FB1391C0051D02D /* Controller */,
@@ -228,6 +281,8 @@
 		843495E81FB1391C0051D02D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B203464B1FB18C7800094259 /* Order.h */,
+				B203464A1FB18C7800094259 /* Order.m */,
 				843495E91FB1391C0051D02D /* GetHotels.xcdatamodeld */,
 			);
 			path = Model;
@@ -245,59 +300,6 @@
 				8434963E1FB14B160051D02D /* Aviation.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		843496111FB13D710051D02D /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				843496121FB13D710051D02D /* AppAPIClient.h */,
-				843496131FB13D710051D02D /* AppAPIClient.m */,
-				843496141FB13D710051D02D /* ErrorHandler.h */,
-				843496151FB13D710051D02D /* ErrorHandler.m */,
-				843496161FB13D710051D02D /* NSData+Base64.h */,
-				843496171FB13D710051D02D /* NSData+Base64.m */,
-				843496181FB13D710051D02D /* NSDate+Utility.h */,
-				843496191FB13D710051D02D /* NSDate+Utility.m */,
-				8434961A1FB13D710051D02D /* NSDateFormatter+Category.h */,
-				8434961B1FB13D710051D02D /* NSDateFormatter+Category.m */,
-				8434961C1FB13D710051D02D /* NSString+Crypt.h */,
-				8434961D1FB13D710051D02D /* NSString+Crypt.m */,
-				8434961E1FB13D710051D02D /* RequestAPI.h */,
-				8434961F1FB13D710051D02D /* RequestAPI.m */,
-				843496201FB13D710051D02D /* StorageMgr.h */,
-				843496211FB13D710051D02D /* StorageMgr.m */,
-				843496221FB13D710051D02D /* Utilities.h */,
-				843496231FB13D710051D02D /* Utilities.m */,
-			);
-			name = Utility;
-			path = "../../../../张敏捷实训/resources/Utility";
-			sourceTree = "<group>";
-		};
-		843496241FB13D710051D02D /* Constant */ = {
-			isa = PBXGroup;
-			children = (
-				843496251FB13D710051D02D /* Constants.h */,
-			);
-			name = Constant;
-			path = "../../../../张敏捷实训/resources/Constant";
-			sourceTree = "<group>";
-		};
-		843496261FB13D720051D02D /* 3rd */ = {
-			isa = PBXGroup;
-			children = (
-				843496271FB13D720051D02D /* SCZ-BasicEncodingRules */,
-			);
-			name = 3rd;
-			path = "../../../../张敏捷实训/resources/3rd";
-			sourceTree = "<group>";
-		};
-		843496271FB13D720051D02D /* SCZ-BasicEncodingRules */ = {
-			isa = PBXGroup;
-			children = (
-				843496281FB13D720051D02D /* BasicEncodingRules.h */,
-				843496291FB13D720051D02D /* BasicEncodingRules.m */,
-			);
-			path = "SCZ-BasicEncodingRules";
 			sourceTree = "<group>";
 		};
 		8434963A1FB149100051D02D /* Mine */ = {
@@ -318,9 +320,103 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B20346001FB18C1600094259 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				B20346011FB18C1600094259 /* SCZ-BasicEncodingRules */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		B20346011FB18C1600094259 /* SCZ-BasicEncodingRules */ = {
+			isa = PBXGroup;
+			children = (
+				B20346021FB18C1600094259 /* BasicEncodingRules.h */,
+				B20346031FB18C1600094259 /* BasicEncodingRules.m */,
+			);
+			path = "SCZ-BasicEncodingRules";
+			sourceTree = "<group>";
+		};
+		B20346041FB18C1600094259 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B20346051FB18C1600094259 /* AliMgr */,
+				B20346091FB18C1600094259 /* AliUtil */,
+				B203461B1FB18C1600094259 /* AppAPIClient.h */,
+				B203461C1FB18C1600094259 /* AppAPIClient.m */,
+				B203461D1FB18C1600094259 /* ErrorHandler.h */,
+				B203461E1FB18C1600094259 /* ErrorHandler.m */,
+				B203461F1FB18C1600094259 /* NSData+Base64.h */,
+				B20346201FB18C1600094259 /* NSData+Base64.m */,
+				B20346211FB18C1600094259 /* NSDate+Utility.h */,
+				B20346221FB18C1600094259 /* NSDate+Utility.m */,
+				B20346231FB18C1600094259 /* NSDateFormatter+Category.h */,
+				B20346241FB18C1600094259 /* NSDateFormatter+Category.m */,
+				B20346251FB18C1600094259 /* NSString+Crypt.h */,
+				B20346261FB18C1600094259 /* NSString+Crypt.m */,
+				B20346271FB18C1600094259 /* RequestAPI.h */,
+				B20346281FB18C1600094259 /* RequestAPI.m */,
+				B20346291FB18C1600094259 /* StorageMgr.h */,
+				B203462A1FB18C1600094259 /* StorageMgr.m */,
+				B203462B1FB18C1600094259 /* Utilities.h */,
+				B203462C1FB18C1600094259 /* Utilities.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B20346051FB18C1600094259 /* AliMgr */ = {
+			isa = PBXGroup;
+			children = (
+				B20346061FB18C1600094259 /* GBAlipayConfig.h */,
+				B20346071FB18C1600094259 /* GBAlipayManager.h */,
+				B20346081FB18C1600094259 /* GBAlipayManager.m */,
+			);
+			path = AliMgr;
+			sourceTree = "<group>";
+		};
+		B20346091FB18C1600094259 /* AliUtil */ = {
+			isa = PBXGroup;
+			children = (
+				B203460A1FB18C1600094259 /* base64.h */,
+				B203460B1FB18C1600094259 /* base64.m */,
+				B203460C1FB18C1600094259 /* config.h */,
+				B203460D1FB18C1600094259 /* DataSigner.h */,
+				B203460E1FB18C1600094259 /* DataSigner.m */,
+				B203460F1FB18C1600094259 /* DataVerifier.h */,
+				B20346101FB18C1600094259 /* DataVerifier.m */,
+				B20346111FB18C1600094259 /* MD5DataSigner.h */,
+				B20346121FB18C1600094259 /* MD5DataSigner.m */,
+				B20346131FB18C1600094259 /* NSDataEx.h */,
+				B20346141FB18C1600094259 /* NSDataEx.m */,
+				B20346151FB18C1600094259 /* openssl_wrapper.h */,
+				B20346161FB18C1600094259 /* openssl_wrapper.m */,
+				B20346171FB18C1600094259 /* RSADataSigner.h */,
+				B20346181FB18C1600094259 /* RSADataSigner.m */,
+				B20346191FB18C1600094259 /* RSADataVerifier.h */,
+				B203461A1FB18C1600094259 /* RSADataVerifier.m */,
+			);
+			path = AliUtil;
+			sourceTree = "<group>";
+		};
+		B203462D1FB18C1600094259 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B203462E1FB18C1600094259 /* Constants.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		BC4258768991716095F17578 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B20346521FB18CC800094259 /* CoreMotion.framework */,
+				B20346511FB18CBB00094259 /* CoreTelephony.framework */,
+				B203464F1FB18CA700094259 /* libz.tbd */,
+				B203464D1FB18C9D00094259 /* libc++.tbd */,
+				B20346421FB18C4D00094259 /* AlipaySDK.bundle */,
+				B20346441FB18C4E00094259 /* AlipaySDK.framework */,
+				B20346451FB18C4E00094259 /* libcrypto.a */,
+				B20346431FB18C4E00094259 /* libssl.a */,
 				843496381FB146040051D02D /* Openssl.framework */,
 				FFF36DA43737E7037EF62D4A /* libPods-GetHotels.a */,
 			);
@@ -436,7 +532,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843496351FB13E2B0051D02D /* Cities.plist in Resources */,
 				843496081FB13A3F0051D02D /* Assets.xcassets in Resources */,
 				843496091FB13A3F0051D02D /* Hotel.storyboard in Resources */,
 				8434960C1FB13A3F0051D02D /* Mine.storyboard in Resources */,
@@ -519,24 +614,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20346361FB18C1600094259 /* openssl_wrapper.m in Sources */,
+				B203462F1FB18C1600094259 /* BasicEncodingRules.m in Sources */,
+				B20346371FB18C1600094259 /* RSADataSigner.m in Sources */,
+				B20346411FB18C1600094259 /* Utilities.m in Sources */,
+				B20346331FB18C1600094259 /* DataVerifier.m in Sources */,
+				B20346381FB18C1600094259 /* RSADataVerifier.m in Sources */,
 				843495F41FB1391C0051D02D /* CityTableViewController.m in Sources */,
-				8434962D1FB13D720051D02D /* NSDate+Utility.m in Sources */,
-				843496311FB13D720051D02D /* StorageMgr.m in Sources */,
+				B20346401FB18C1600094259 /* StorageMgr.m in Sources */,
+				B20346301FB18C1600094259 /* GBAlipayManager.m in Sources */,
 				8434963D1FB1495F0051D02D /* MineViewController.m in Sources */,
-				8434962A1FB13D720051D02D /* AppAPIClient.m in Sources */,
 				843495F61FB1391C0051D02D /* LoginTableViewController.m in Sources */,
-				8434962C1FB13D720051D02D /* NSData+Base64.m in Sources */,
+				B203463D1FB18C1600094259 /* NSDateFormatter+Category.m in Sources */,
+				B203463A1FB18C1600094259 /* ErrorHandler.m in Sources */,
 				843495F51FB1391C0051D02D /* HotelsViewController.m in Sources */,
 				843496101FB13AEF0051D02D /* MainViewController.m in Sources */,
-				843496331FB13D720051D02D /* BasicEncodingRules.m in Sources */,
 				843495BB1FB135430051D02D /* main.m in Sources */,
+				B203463C1FB18C1600094259 /* NSDate+Utility.m in Sources */,
+				B203463F1FB18C1600094259 /* RequestAPI.m in Sources */,
+				B203464C1FB18C7800094259 /* Order.m in Sources */,
+				B20346391FB18C1600094259 /* AppAPIClient.m in Sources */,
+				B203463E1FB18C1600094259 /* NSString+Crypt.m in Sources */,
+				B20346311FB18C1600094259 /* base64.m in Sources */,
+				B20346321FB18C1600094259 /* DataSigner.m in Sources */,
+				B20346351FB18C1600094259 /* NSDataEx.m in Sources */,
+				B203463B1FB18C1600094259 /* NSData+Base64.m in Sources */,
 				843495AA1FB135430051D02D /* AppDelegate.m in Sources */,
-				843496301FB13D720051D02D /* RequestAPI.m in Sources */,
-				8434962F1FB13D720051D02D /* NSString+Crypt.m in Sources */,
+				B20346341FB18C1600094259 /* MD5DataSigner.m in Sources */,
 				843495F71FB1391C0051D02D /* GetHotels.xcdatamodeld in Sources */,
-				8434962B1FB13D720051D02D /* ErrorHandler.m in Sources */,
-				843496321FB13D720051D02D /* Utilities.m in Sources */,
-				8434962E1FB13D720051D02D /* NSDateFormatter+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,6 +795,10 @@
 				GCC_PREFIX_HEADER = GetHotels/PrefixHeader.pch;
 				INFOPLIST_FILE = GetHotels/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GetHotels",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jxxd.GetHotels;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -710,6 +819,10 @@
 				GCC_PREFIX_HEADER = GetHotels/PrefixHeader.pch;
 				INFOPLIST_FILE = GetHotels/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GetHotels",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jxxd.GetHotels;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
