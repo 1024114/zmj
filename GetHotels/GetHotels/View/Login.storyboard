@@ -13,7 +13,7 @@
         <!--会员登录-->
         <scene sceneID="O8L-uT-F18">
             <objects>
-                <viewController id="szv-oG-FOQ" customClass="LoginTableViewController" sceneMemberID="viewController">
+                <viewController id="szv-oG-FOQ" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mC8-bN-cAc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,14 +27,14 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="validate" highlightedImage="validate" translatesAutoresizingMaskIntoConstraints="NO" id="JeM-W1-9RW">
                                         <rect key="frame" x="20" y="143" width="17" height="22"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BeK-V7-7Wc">
-                                        <rect key="frame" x="52" y="143" width="278" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3b-L7-gTG">
+                                        <rect key="frame" x="50" y="60" width="280" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3b-L7-gTG">
-                                        <rect key="frame" x="50" y="60" width="280" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BeK-V7-7Wc">
+                                        <rect key="frame" x="52" y="143" width="278" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -43,7 +43,8 @@
                                         <rect key="frame" x="253" y="188" width="77" height="30"/>
                                         <state key="normal" title="注册新用户"/>
                                         <connections>
-                                            <action selector="joinUsAction:forEvent:" destination="szv-oG-FOQ" eventType="touchUpInside" id="N1a-zu-Kyr"/>
+                                            <action selector="joinUsAction:forEvent:" destination="szv-oG-FOQ" eventType="touchUpInside" id="Zsz-kd-odp"/>
+                                            <segue destination="36d-ye-OzM" kind="show" identifier="loginTosignUp" id="pF0-dp-ipH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -77,7 +78,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="loginAction:forEvent:" destination="szv-oG-FOQ" eventType="touchUpInside" id="gwM-8T-0Tn"/>
+                                    <action selector="loginAction:forEvent:" destination="szv-oG-FOQ" eventType="touchUpInside" id="Pwd-nM-6g2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,20 +97,21 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="ptv-Fp-ebN"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="loginBtn" destination="QJG-Iu-vAC" id="3m5-uG-qK9"/>
+                        <outlet property="PwdTextField" destination="BeK-V7-7Wc" id="OhJ-CA-zkk"/>
+                        <outlet property="UsernameTextField" destination="e3b-L7-gTG" id="HPC-MP-nfh"/>
+                        <outlet property="loginBtn" destination="QJG-Iu-vAC" id="ULz-xD-pP0"/>
                         <outlet property="pwdTextField" destination="BeK-V7-7Wc" id="p7d-Xh-wZY"/>
                         <outlet property="usernameTextField" destination="BeK-V7-7Wc" id="8Sj-ci-s8o"/>
-                        <segue destination="36d-ye-OzM" kind="show" id="UIf-R5-sSP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcT-QF-EYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-87.200000000000003" y="142.57871064467767"/>
+            <point key="canvasLocation" x="-84" y="143"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="OFe-FK-ihz">
             <objects>
-                <viewController id="36d-ye-OzM" sceneMemberID="viewController">
+                <viewController id="36d-ye-OzM" customClass="SignUpViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Khc-3P-xg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,14 +125,20 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="validate" highlightedImage="validate" translatesAutoresizingMaskIntoConstraints="NO" id="Ml0-F9-axr">
                                         <rect key="frame" x="20" y="143" width="17" height="22"/>
                                     </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入手机号" borderStyle="roundedRect" placeholder="请输入手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LEM-Be-JsK">
+                                        <rect key="frame" x="50" y="60" width="280" height="30"/>
+                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入密码" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uO-Mz-V8C">
                                         <rect key="frame" x="52" y="143" width="278" height="30"/>
                                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入手机号" borderStyle="roundedRect" placeholder="请输入手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LEM-Be-JsK">
-                                        <rect key="frame" x="50" y="60" width="280" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请再次输入密码" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lf6-W3-qDM">
+                                        <rect key="frame" x="52" y="221" width="278" height="30"/>
                                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -138,12 +146,6 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="validate" highlightedImage="validate" translatesAutoresizingMaskIntoConstraints="NO" id="rJx-zA-Mje">
                                         <rect key="frame" x="20" y="225" width="17" height="22"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请再次输入密码" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lf6-W3-qDM">
-                                        <rect key="frame" x="52" y="221" width="278" height="30"/>
-                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -178,6 +180,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginAction:forEvent:" destination="szv-oG-FOQ" eventType="touchUpInside" id="blK-c4-uNc"/>
+                                    <action selector="signUpAction:forEvent:" destination="36d-ye-OzM" eventType="touchUpInside" id="qwr-DM-ZyF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -192,10 +195,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w39-pB-Qv2"/>
                     </view>
+                    <connections>
+                        <outlet property="PwdTextField" destination="9uO-Mz-V8C" id="xhy-Mz-U1j"/>
+                        <outlet property="confirmPwdTextField" destination="lf6-W3-qDM" id="GRv-yy-52c"/>
+                        <outlet property="signUpBtn" destination="qin-tD-Ib0" id="kEX-pd-CH8"/>
+                        <outlet property="usernameTextField" destination="LEM-Be-JsK" id="Us6-Rl-wjn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LuC-Nv-F1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="733.60000000000002" y="142.57871064467767"/>
+            <point key="canvasLocation" x="1049" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ImM-k7-E1Y">

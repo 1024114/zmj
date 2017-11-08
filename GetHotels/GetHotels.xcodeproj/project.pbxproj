@@ -20,7 +20,6 @@
 		843496091FB13A3F0051D02D /* Hotel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496031FB13A3F0051D02D /* Hotel.storyboard */; };
 		8434960A1FB13A3F0051D02D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496041FB13A3F0051D02D /* Login.storyboard */; };
 		8434960B1FB13A3F0051D02D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496051FB13A3F0051D02D /* Main.storyboard */; };
-		8434960C1FB13A3F0051D02D /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496061FB13A3F0051D02D /* Mine.storyboard */; };
 		8434960D1FB13A3F0051D02D /* Pay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496071FB13A3F0051D02D /* Pay.storyboard */; };
 		843496101FB13AEF0051D02D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434960F1FB13AEF0051D02D /* MainViewController.m */; };
 		843496391FB146040051D02D /* Openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843496381FB146040051D02D /* Openssl.framework */; };
@@ -54,6 +53,11 @@
 		B20346501FB18CA700094259 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B203464F1FB18CA700094259 /* libz.tbd */; };
 		B20346531FB18CE600094259 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20346511FB18CBB00094259 /* CoreTelephony.framework */; };
 		B20346541FB18CF100094259 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20346521FB18CC800094259 /* CoreMotion.framework */; };
+		B203465A1FB192D400094259 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346591FB192D400094259 /* MineViewController.m */; };
+		B20346601FB1A07700094259 /* PayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203465E1FB1A07700094259 /* PayTableViewController.m */; };
+		B27E821E1FB28C8300AFA7BA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27E821D1FB28C8300AFA7BA /* LoginViewController.m */; };
+		B27E82201FB2901500AFA7BA /* mines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27E821F1FB2901500AFA7BA /* mines.storyboard */; };
+		B27E82271FB29BE500AFA7BA /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27E82261FB29BE500AFA7BA /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +100,6 @@
 		843496031FB13A3F0051D02D /* Hotel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hotel.storyboard; sourceTree = "<group>"; };
 		843496041FB13A3F0051D02D /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		843496051FB13A3F0051D02D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		843496061FB13A3F0051D02D /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		843496071FB13A3F0051D02D /* Pay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pay.storyboard; sourceTree = "<group>"; };
 		8434960E1FB13AEF0051D02D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8434960F1FB13AEF0051D02D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -158,6 +161,15 @@
 		B203464F1FB18CA700094259 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B20346511FB18CBB00094259 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B20346521FB18CC800094259 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B20346581FB192D400094259 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		B20346591FB192D400094259 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		B203465E1FB1A07700094259 /* PayTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PayTableViewController.m; path = /Users/admin1/Desktop/GetHotels/GetHotels/GetHotels/PayTableViewController.m; sourceTree = "<absolute>"; };
+		B203465F1FB1A07700094259 /* PayTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PayTableViewController.h; path = /Users/admin1/Desktop/GetHotels/GetHotels/GetHotels/PayTableViewController.h; sourceTree = "<absolute>"; };
+		B27E821C1FB28C8300AFA7BA /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B27E821D1FB28C8300AFA7BA /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B27E821F1FB2901500AFA7BA /* mines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mines.storyboard; sourceTree = "<group>"; };
+		B27E82251FB29BE500AFA7BA /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		B27E82261FB29BE500AFA7BA /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		FFF36DA43737E7037EF62D4A /* libPods-GetHotels.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetHotels.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -229,6 +241,8 @@
 				843495E01FB1391C0051D02D /* Controller */,
 				843495A81FB135430051D02D /* AppDelegate.h */,
 				843495A91FB135430051D02D /* AppDelegate.m */,
+				B203465F1FB1A07700094259 /* PayTableViewController.h */,
+				B203465E1FB1A07700094259 /* PayTableViewController.m */,
 				843495B91FB135430051D02D /* Info.plist */,
 				843495BA1FB135430051D02D /* main.m */,
 				843496371FB143530051D02D /* PrefixHeader.pch */,
@@ -257,6 +271,7 @@
 		843495E01FB1391C0051D02D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B27E82241FB294E100AFA7BA /* Login */,
 				8434963A1FB149100051D02D /* Mine */,
 				843495E11FB1391C0051D02D /* Hotels */,
 				843495E61FB1391C0051D02D /* LoginTableViewController.h */,
@@ -295,7 +310,7 @@
 				843496031FB13A3F0051D02D /* Hotel.storyboard */,
 				843496041FB13A3F0051D02D /* Login.storyboard */,
 				843496051FB13A3F0051D02D /* Main.storyboard */,
-				843496061FB13A3F0051D02D /* Mine.storyboard */,
+				B27E821F1FB2901500AFA7BA /* mines.storyboard */,
 				843496071FB13A3F0051D02D /* Pay.storyboard */,
 				8434963E1FB14B160051D02D /* Aviation.storyboard */,
 			);
@@ -404,6 +419,19 @@
 				B203462E1FB18C1600094259 /* Constants.h */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		B27E82241FB294E100AFA7BA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B20346581FB192D400094259 /* MineViewController.h */,
+				B20346591FB192D400094259 /* MineViewController.m */,
+				B27E821C1FB28C8300AFA7BA /* LoginViewController.h */,
+				B27E821D1FB28C8300AFA7BA /* LoginViewController.m */,
+				B27E82251FB29BE500AFA7BA /* SignUpViewController.h */,
+				B27E82261FB29BE500AFA7BA /* SignUpViewController.m */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		BC4258768991716095F17578 /* Frameworks */ = {
@@ -534,7 +562,7 @@
 			files = (
 				843496081FB13A3F0051D02D /* Assets.xcassets in Resources */,
 				843496091FB13A3F0051D02D /* Hotel.storyboard in Resources */,
-				8434960C1FB13A3F0051D02D /* Mine.storyboard in Resources */,
+				B27E82201FB2901500AFA7BA /* mines.storyboard in Resources */,
 				8434960D1FB13A3F0051D02D /* Pay.storyboard in Resources */,
 				8434963F1FB14B160051D02D /* Aviation.storyboard in Resources */,
 				8434960A1FB13A3F0051D02D /* Login.storyboard in Resources */,
@@ -620,13 +648,16 @@
 				B20346411FB18C1600094259 /* Utilities.m in Sources */,
 				B20346331FB18C1600094259 /* DataVerifier.m in Sources */,
 				B20346381FB18C1600094259 /* RSADataVerifier.m in Sources */,
+				B27E82271FB29BE500AFA7BA /* SignUpViewController.m in Sources */,
 				843495F41FB1391C0051D02D /* CityTableViewController.m in Sources */,
 				B20346401FB18C1600094259 /* StorageMgr.m in Sources */,
+				B203465A1FB192D400094259 /* MineViewController.m in Sources */,
 				B20346301FB18C1600094259 /* GBAlipayManager.m in Sources */,
 				8434963D1FB1495F0051D02D /* MineViewController.m in Sources */,
 				843495F61FB1391C0051D02D /* LoginTableViewController.m in Sources */,
 				B203463D1FB18C1600094259 /* NSDateFormatter+Category.m in Sources */,
 				B203463A1FB18C1600094259 /* ErrorHandler.m in Sources */,
+				B20346601FB1A07700094259 /* PayTableViewController.m in Sources */,
 				843495F51FB1391C0051D02D /* HotelsViewController.m in Sources */,
 				843496101FB13AEF0051D02D /* MainViewController.m in Sources */,
 				843495BB1FB135430051D02D /* main.m in Sources */,
@@ -642,6 +673,7 @@
 				843495AA1FB135430051D02D /* AppDelegate.m in Sources */,
 				B20346341FB18C1600094259 /* MD5DataSigner.m in Sources */,
 				843495F71FB1391C0051D02D /* GetHotels.xcdatamodeld in Sources */,
+				B27E821E1FB28C8300AFA7BA /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,7 +833,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jxxd.GetHotels;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -825,7 +857,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jxxd.GetHotels;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
