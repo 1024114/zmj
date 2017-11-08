@@ -9,6 +9,7 @@
 #import "MineViewController.h"
 
 @interface MineViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *UserNameLabel;
 
 @end
 
