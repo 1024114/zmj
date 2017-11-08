@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="O5m-vm-Agq">
             <objects>
-                <viewController id="itm-bv-UJw" sceneMemberID="viewController">
+                <viewController id="itm-bv-UJw" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ng6-Ll-bdZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -480,6 +480,9 @@
                                         <state key="normal" title="购买">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="purchaseAction:forEvent:" destination="itm-bv-UJw" eventType="touchUpInside" id="wfs-E9-pMW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -506,6 +509,36 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ty7-Ld-E99"/>
                     </view>
+                    <connections>
+                        <outlet property="adView" destination="nZr-qc-OAu" id="tPq-9g-KfW"/>
+                        <outlet property="address" destination="j7D-h5-5zu" id="G1v-cK-abw"/>
+                        <outlet property="bedTypeLal" destination="4ir-2u-iga" id="FVE-LG-Uln"/>
+                        <outlet property="breakfastLbl" destination="kwc-dM-Jrg" id="RSm-NO-UUa"/>
+                        <outlet property="checkInTimeLbl" destination="2Ol-JQ-qan" id="53R-YO-agi"/>
+                        <outlet property="datePicker" destination="TZS-8v-bLC" id="JHa-Pe-AEL"/>
+                        <outlet property="endDateBtn" destination="h8T-Py-25b" id="zyJ-0x-FbE"/>
+                        <outlet property="endDayLal" destination="o2R-t5-Z8g" id="j2R-9B-io4"/>
+                        <outlet property="fitnessLbl" destination="CYC-EO-gfG" id="qNU-x0-H4h"/>
+                        <outlet property="freeProductLbl" destination="wOW-Be-TaK" id="bBU-mF-RrQ"/>
+                        <outlet property="freeWifi" destination="Adn-IZ-JWP" id="xuL-ou-nNZ"/>
+                        <outlet property="hotelImage" destination="6be-7q-zYT" id="eDk-Xg-9nS"/>
+                        <outlet property="hotelName" destination="xJy-fW-g0Y" id="yQS-zQ-FoY"/>
+                        <outlet property="isCarrayPetLbl" destination="108-jO-KuJ" id="a1g-h1-oro"/>
+                        <outlet property="leaveTimeLbl" destination="xfj-EE-J56" id="Ofz-rJ-lTj"/>
+                        <outlet property="luggageLbl" destination="gZJ-VT-XpW" id="iNd-kt-Zod"/>
+                        <outlet property="parkLbl" destination="uY0-YD-Y3Z" id="akb-zp-CZD"/>
+                        <outlet property="pickUpLbl" destination="Vqm-zW-4a0" id="T0Q-Th-kbD"/>
+                        <outlet property="pickerView" destination="TZS-8v-bLC" id="Qz7-w6-5hk"/>
+                        <outlet property="price" destination="jmN-98-HH1" id="Cfk-RP-J1v"/>
+                        <outlet property="purchaseBtn" destination="lKi-QZ-Zup" id="5m6-n8-hfL"/>
+                        <outlet property="restaurantLbl" destination="fpb-n9-7vY" id="q1S-FT-LR1"/>
+                        <outlet property="roomArea" destination="SDM-am-nTI" id="U9s-ja-Tlq"/>
+                        <outlet property="roomTypeBtn" destination="bmb-Sh-mg9" id="1xE-eB-cgA"/>
+                        <outlet property="starDayLbl" destination="lPR-uN-MCZ" id="oIY-lZ-hGv"/>
+                        <outlet property="startDateBtn" destination="pAQ-8v-6wS" id="drr-k1-cKd"/>
+                        <outlet property="toolBar" destination="ddW-F7-wTh" id="wGB-oE-qaB"/>
+                        <outlet property="wakeUpLbl" destination="fdr-1l-la5" id="JWP-AN-MH0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ASy-NM-GvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

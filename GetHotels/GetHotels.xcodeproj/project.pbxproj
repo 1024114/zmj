@@ -27,6 +27,7 @@
 		8434963D1FB1495F0051D02D /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434963C1FB1495F0051D02D /* MineViewController.m */; };
 		8434963F1FB14B160051D02D /* Aviation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8434963E1FB14B160051D02D /* Aviation.storyboard */; };
 		843CB1DD1FB29A6500E62CAB /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843CB1DC1FB29A6500E62CAB /* Detail.storyboard */; };
+		843CB1E01FB29B8100E62CAB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843CB1DF1FB29B8100E62CAB /* DetailViewController.m */; };
 		B203462F1FB18C1600094259 /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346031FB18C1600094259 /* BasicEncodingRules.m */; };
 		B20346301FB18C1600094259 /* GBAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346081FB18C1600094259 /* GBAlipayManager.m */; };
 		B20346311FB18C1600094259 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B203460B1FB18C1600094259 /* base64.m */; };
@@ -107,6 +108,8 @@
 		8434963C1FB1495F0051D02D /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		8434963E1FB14B160051D02D /* Aviation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Aviation.storyboard; sourceTree = "<group>"; };
 		843CB1DC1FB29A6500E62CAB /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		843CB1DE1FB29B8100E62CAB /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		843CB1DF1FB29B8100E62CAB /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		8B21A05484BBD2B8008DD3B5 /* Pods-GetHotels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetHotels.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetHotels/Pods-GetHotels.release.xcconfig"; sourceTree = "<group>"; };
 		AE4E6E77482CFC29B893CA0E /* Pods-GetHotels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetHotels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetHotels/Pods-GetHotels.debug.xcconfig"; sourceTree = "<group>"; };
 		B20346021FB18C1600094259 /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 				843495E31FB1391C0051D02D /* CityTableViewController.m */,
 				843495E41FB1391C0051D02D /* HotelsViewController.h */,
 				843495E51FB1391C0051D02D /* HotelsViewController.m */,
+				843CB1DE1FB29B8100E62CAB /* DetailViewController.h */,
+				843CB1DF1FB29B8100E62CAB /* DetailViewController.m */,
 			);
 			path = Hotels;
 			sourceTree = "<group>";
@@ -641,6 +646,7 @@
 				B203463E1FB18C1600094259 /* NSString+Crypt.m in Sources */,
 				B20346311FB18C1600094259 /* base64.m in Sources */,
 				B20346321FB18C1600094259 /* DataSigner.m in Sources */,
+				843CB1E01FB29B8100E62CAB /* DetailViewController.m in Sources */,
 				B20346351FB18C1600094259 /* NSDataEx.m in Sources */,
 				B203463B1FB18C1600094259 /* NSData+Base64.m in Sources */,
 				843495AA1FB135430051D02D /* AppDelegate.m in Sources */,
