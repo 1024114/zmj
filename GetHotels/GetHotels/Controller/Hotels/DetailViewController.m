@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *roomTypeBtn;
 @property (weak, nonatomic) IBOutlet UILabel *breakfastLbl;
 @property (weak, nonatomic) IBOutlet UILabel *roomArea;
+@property (weak, nonatomic) IBOutlet UILabel *bedTypeLal;
 @property (weak, nonatomic) IBOutlet UILabel *parkLbl;
 @property (weak, nonatomic) IBOutlet UILabel *pickUpLbl;//接机服务
 @property (weak, nonatomic) IBOutlet UILabel *fitnessLbl;//健身
@@ -33,13 +34,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *leaveTimeLbl;
 @property (weak, nonatomic) IBOutlet UILabel *isCarrayPetLbl;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
-
-@property (weak, nonatomic) IBOutlet UILabel *bedTypeLal;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 @property (weak, nonatomic) IBOutlet UIDatePicker *pickerView;
-
 @property (weak, nonatomic) IBOutlet UIButton *purchaseBtn;
 - (IBAction)purchaseAction:(UIButton *)sender forEvent:(UIEvent *)event;
+
+
 
 @end
 

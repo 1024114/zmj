@@ -21,13 +21,16 @@
 		8434960A1FB13A3F0051D02D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496041FB13A3F0051D02D /* Login.storyboard */; };
 		8434960B1FB13A3F0051D02D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496051FB13A3F0051D02D /* Main.storyboard */; };
 		8434960C1FB13A3F0051D02D /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496061FB13A3F0051D02D /* Mine.storyboard */; };
-		8434960D1FB13A3F0051D02D /* Pay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496071FB13A3F0051D02D /* Pay.storyboard */; };
 		843496101FB13AEF0051D02D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434960F1FB13AEF0051D02D /* MainViewController.m */; };
 		843496391FB146040051D02D /* Openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843496381FB146040051D02D /* Openssl.framework */; };
 		8434963D1FB1495F0051D02D /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434963C1FB1495F0051D02D /* MineViewController.m */; };
 		8434963F1FB14B160051D02D /* Aviation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8434963E1FB14B160051D02D /* Aviation.storyboard */; };
 		843CB1DD1FB29A6500E62CAB /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843CB1DC1FB29A6500E62CAB /* Detail.storyboard */; };
 		843CB1E01FB29B8100E62CAB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843CB1DF1FB29B8100E62CAB /* DetailViewController.m */; };
+		84F679B41FB2D031009DB0C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F679B31FB2D031009DB0C6 /* LaunchScreen.storyboard */; };
+		84F679B71FB2D099009DB0C6 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F679B61FB2D099009DB0C6 /* PayViewController.m */; };
+		84F679B91FB2D21B009DB0C6 /* Flight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F679B81FB2D21B009DB0C6 /* Flight.storyboard */; };
+		84F679BD1FB2DAEE009DB0C6 /* DemandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F679BC1FB2DAEE009DB0C6 /* DemandViewController.m */; };
 		B203462F1FB18C1600094259 /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346031FB18C1600094259 /* BasicEncodingRules.m */; };
 		B20346301FB18C1600094259 /* GBAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346081FB18C1600094259 /* GBAlipayManager.m */; };
 		B20346311FB18C1600094259 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B203460B1FB18C1600094259 /* base64.m */; };
@@ -99,7 +102,6 @@
 		843496041FB13A3F0051D02D /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		843496051FB13A3F0051D02D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		843496061FB13A3F0051D02D /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
-		843496071FB13A3F0051D02D /* Pay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pay.storyboard; sourceTree = "<group>"; };
 		8434960E1FB13AEF0051D02D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8434960F1FB13AEF0051D02D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		843496371FB143530051D02D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -110,6 +112,12 @@
 		843CB1DC1FB29A6500E62CAB /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		843CB1DE1FB29B8100E62CAB /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		843CB1DF1FB29B8100E62CAB /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		84F679B31FB2D031009DB0C6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F679B51FB2D099009DB0C6 /* PayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		84F679B61FB2D099009DB0C6 /* PayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		84F679B81FB2D21B009DB0C6 /* Flight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flight.storyboard; sourceTree = "<group>"; };
+		84F679BB1FB2DAEE009DB0C6 /* DemandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemandViewController.h; sourceTree = "<group>"; };
+		84F679BC1FB2DAEE009DB0C6 /* DemandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemandViewController.m; sourceTree = "<group>"; };
 		8B21A05484BBD2B8008DD3B5 /* Pods-GetHotels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetHotels.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetHotels/Pods-GetHotels.release.xcconfig"; sourceTree = "<group>"; };
 		AE4E6E77482CFC29B893CA0E /* Pods-GetHotels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetHotels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetHotels/Pods-GetHotels.debug.xcconfig"; sourceTree = "<group>"; };
 		B20346021FB18C1600094259 /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
@@ -264,8 +272,7 @@
 			children = (
 				8434963A1FB149100051D02D /* Mine */,
 				843495E11FB1391C0051D02D /* Hotels */,
-				843495E61FB1391C0051D02D /* LoginTableViewController.h */,
-				843495E71FB1391C0051D02D /* LoginTableViewController.m */,
+				84F679BA1FB2DA63009DB0C6 /* Flight */,
 				8434960E1FB13AEF0051D02D /* MainViewController.h */,
 				8434960F1FB13AEF0051D02D /* MainViewController.m */,
 			);
@@ -281,6 +288,8 @@
 				843495E51FB1391C0051D02D /* HotelsViewController.m */,
 				843CB1DE1FB29B8100E62CAB /* DetailViewController.h */,
 				843CB1DF1FB29B8100E62CAB /* DetailViewController.m */,
+				84F679B51FB2D099009DB0C6 /* PayViewController.h */,
+				84F679B61FB2D099009DB0C6 /* PayViewController.m */,
 			);
 			path = Hotels;
 			sourceTree = "<group>";
@@ -303,9 +312,10 @@
 				843496041FB13A3F0051D02D /* Login.storyboard */,
 				843496051FB13A3F0051D02D /* Main.storyboard */,
 				843496061FB13A3F0051D02D /* Mine.storyboard */,
-				843496071FB13A3F0051D02D /* Pay.storyboard */,
 				8434963E1FB14B160051D02D /* Aviation.storyboard */,
 				843CB1DC1FB29A6500E62CAB /* Detail.storyboard */,
+				84F679B81FB2D21B009DB0C6 /* Flight.storyboard */,
+				84F679B31FB2D031009DB0C6 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,8 +325,19 @@
 			children = (
 				8434963B1FB1495F0051D02D /* MineViewController.h */,
 				8434963C1FB1495F0051D02D /* MineViewController.m */,
+				843495E61FB1391C0051D02D /* LoginTableViewController.h */,
+				843495E71FB1391C0051D02D /* LoginTableViewController.m */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		84F679BA1FB2DA63009DB0C6 /* Flight */ = {
+			isa = PBXGroup;
+			children = (
+				84F679BB1FB2DAEE009DB0C6 /* DemandViewController.h */,
+				84F679BC1FB2DAEE009DB0C6 /* DemandViewController.m */,
+			);
+			path = Flight;
 			sourceTree = "<group>";
 		};
 		A46D7358E750C68A166E7F13 /* Pods */ = {
@@ -541,10 +562,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				843496081FB13A3F0051D02D /* Assets.xcassets in Resources */,
+				84F679B41FB2D031009DB0C6 /* LaunchScreen.storyboard in Resources */,
 				843496091FB13A3F0051D02D /* Hotel.storyboard in Resources */,
 				8434960C1FB13A3F0051D02D /* Mine.storyboard in Resources */,
 				843CB1DD1FB29A6500E62CAB /* Detail.storyboard in Resources */,
-				8434960D1FB13A3F0051D02D /* Pay.storyboard in Resources */,
+				84F679B91FB2D21B009DB0C6 /* Flight.storyboard in Resources */,
 				8434963F1FB14B160051D02D /* Aviation.storyboard in Resources */,
 				8434960A1FB13A3F0051D02D /* Login.storyboard in Resources */,
 				8434960B1FB13A3F0051D02D /* Main.storyboard in Resources */,
@@ -630,6 +652,7 @@
 				B20346331FB18C1600094259 /* DataVerifier.m in Sources */,
 				B20346381FB18C1600094259 /* RSADataVerifier.m in Sources */,
 				843495F41FB1391C0051D02D /* CityTableViewController.m in Sources */,
+				84F679B71FB2D099009DB0C6 /* PayViewController.m in Sources */,
 				B20346401FB18C1600094259 /* StorageMgr.m in Sources */,
 				B20346301FB18C1600094259 /* GBAlipayManager.m in Sources */,
 				8434963D1FB1495F0051D02D /* MineViewController.m in Sources */,
@@ -648,6 +671,7 @@
 				B20346321FB18C1600094259 /* DataSigner.m in Sources */,
 				843CB1E01FB29B8100E62CAB /* DetailViewController.m in Sources */,
 				B20346351FB18C1600094259 /* NSDataEx.m in Sources */,
+				84F679BD1FB2DAEE009DB0C6 /* DemandViewController.m in Sources */,
 				B203463B1FB18C1600094259 /* NSData+Base64.m in Sources */,
 				843495AA1FB135430051D02D /* AppDelegate.m in Sources */,
 				B20346341FB18C1600094259 /* MD5DataSigner.m in Sources */,

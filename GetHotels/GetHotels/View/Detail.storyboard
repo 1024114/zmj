@@ -482,6 +482,7 @@
                                         </state>
                                         <connections>
                                             <action selector="purchaseAction:forEvent:" destination="itm-bv-UJw" eventType="touchUpInside" id="wfs-E9-pMW"/>
+                                            <segue destination="EM3-Iv-bVd" kind="show" action="showDetailViewController:sender:" id="6Qc-wc-43A"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -543,6 +544,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ASy-NM-GvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="25" y="117"/>
+        </scene>
+        <!--Pay View Controller-->
+        <scene sceneID="XkJ-Db-lUF">
+            <objects>
+                <viewController id="EM3-Iv-bVd" customClass="PayViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qab-Vu-Ohv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="MbS-ey-wRy">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4g-F0-XES">
+                                    <rect key="frame" x="10" y="15" width="350" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5Y-ke-Yp3">
+                                    <rect key="frame" x="10" y="51" width="350" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.01元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqH-NR-Qbl">
+                                    <rect key="frame" x="10" y="84" width="350" height="39.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="F4g-F0-XES" secondAttribute="trailing" constant="15" id="HGZ-mp-JBa"/>
+                                <constraint firstItem="F5Y-ke-Yp3" firstAttribute="trailing" secondItem="F4g-F0-XES" secondAttribute="trailing" id="OKS-uo-Exf"/>
+                                <constraint firstItem="F4g-F0-XES" firstAttribute="top" secondItem="MbS-ey-wRy" secondAttribute="top" constant="15" id="Rd5-JV-dzW"/>
+                                <constraint firstItem="F4g-F0-XES" firstAttribute="leading" secondItem="MbS-ey-wRy" secondAttribute="leading" constant="10" id="V2N-Pu-soh"/>
+                                <constraint firstItem="F5Y-ke-Yp3" firstAttribute="top" secondItem="F4g-F0-XES" secondAttribute="bottom" constant="15" id="Vfu-rj-Saz"/>
+                                <constraint firstItem="nqH-NR-Qbl" firstAttribute="trailing" secondItem="F4g-F0-XES" secondAttribute="trailing" id="ZOg-56-0bs"/>
+                                <constraint firstItem="nqH-NR-Qbl" firstAttribute="top" secondItem="F5Y-ke-Yp3" secondAttribute="bottom" constant="15" id="f9b-SX-Mty"/>
+                                <constraint firstItem="F5Y-ke-Yp3" firstAttribute="leading" secondItem="F4g-F0-XES" secondAttribute="leading" id="nqR-Js-lOh"/>
+                                <constraint firstItem="nqH-NR-Qbl" firstAttribute="leading" secondItem="F4g-F0-XES" secondAttribute="leading" id="rqx-ce-SdY"/>
+                            </constraints>
+                        </view>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kAL-cj-Hrh">
+                            <rect key="frame" x="0.0" y="235" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="确认支付"/>
+                        </button>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="paycell" textLabel="DHr-Ll-wSZ" style="IBUITableViewCellStyleDefault" id="i6d-0t-rgy">
+                                <rect key="frame" x="0.0" y="191" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i6d-0t-rgy" id="uaY-a6-hIE">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DHr-Ll-wSZ">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sqW-2g-q9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732" y="116"/>
         </scene>
     </scenes>
     <resources>
