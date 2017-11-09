@@ -7,6 +7,8 @@
 //
 
 #import "GBAlipayManager.h"
+#import <Foundation/Foundation.h>
+
 
 @implementation GBAlipayManager
 /**

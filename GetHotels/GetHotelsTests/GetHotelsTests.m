@@ -2,8 +2,8 @@
 //  GetHotelsTests.m
 //  GetHotelsTests
 //
-//  Created by admin on 2017/11/7.
-//  Copyright © 2017年 admin2. All rights reserved.
+//  Created by admin on 2017/11/05.
+//  Copyright © 2017年 EDucation. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

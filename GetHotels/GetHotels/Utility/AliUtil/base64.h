@@ -58,7 +58,7 @@ int base64_self_test( int verbose );
 #ifdef __cplusplus
 }
 #endif
-
+#import <Foundation/Foundation.h>
 
 @interface Base64 : NSObject
 
