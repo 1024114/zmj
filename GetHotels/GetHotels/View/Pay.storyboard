@@ -58,9 +58,6 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <state key="normal" title="确认支付"/>
-                            <connections>
-                                <action selector="ActionQuerenBtn:forEvent:" destination="dtJ-kw-Jlt" eventType="touchUpInside" id="bcD-oA-hYf"/>
-                            </connections>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="paycell" textLabel="XvJ-Nv-6cG" style="IBUITableViewCellStyleDefault" id="LSD-gD-CQT">
@@ -88,11 +85,10 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="支付" id="gGE-Fw-z2l"/>
                     <connections>
-                        <outlet property="applyFeeLabel" destination="ZsA-Nb-70Z" id="5AE-lE-61A"/>
-                        <outlet property="contentLabel" destination="JaE-HD-ve8" id="xp7-FN-Tx7"/>
-                        <outlet property="headerView" destination="jSo-LD-jbT" id="xfI-oV-gjA"/>
-                        <outlet property="nameLabel" destination="FEr-iM-Npb" id="lBn-mn-MlP"/>
-                        <outlet property="querenBtn" destination="J0A-lP-icL" id="JtO-ie-Mzh"/>
+                        <outlet property="applyFeeLabel" destination="ZsA-Nb-70Z" id="QBG-om-dux"/>
+                        <outlet property="contentLabel" destination="JaE-HD-ve8" id="UJc-Uq-Feg"/>
+                        <outlet property="headerView" destination="jSo-LD-jbT" id="ckX-sZ-Xe8"/>
+                        <outlet property="nameLabel" destination="FEr-iM-Npb" id="YEb-N2-JxD"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p06-5D-dCw" userLabel="First Responder" sceneMemberID="firstResponder"/>

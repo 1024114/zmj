@@ -17,13 +17,23 @@
 		843495F61FB1391C0051D02D /* LoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843495E71FB1391C0051D02D /* LoginTableViewController.m */; };
 		843495F71FB1391C0051D02D /* GetHotels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 843495E91FB1391C0051D02D /* GetHotels.xcdatamodeld */; };
 		843496081FB13A3F0051D02D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843496021FB13A3F0051D02D /* Assets.xcassets */; };
-		843496091FB13A3F0051D02D /* Hotel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496031FB13A3F0051D02D /* Hotel.storyboard */; };
-		8434960A1FB13A3F0051D02D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496041FB13A3F0051D02D /* Login.storyboard */; };
-		8434960B1FB13A3F0051D02D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843496051FB13A3F0051D02D /* Main.storyboard */; };
 		843496101FB13AEF0051D02D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434960F1FB13AEF0051D02D /* MainViewController.m */; };
 		843496391FB146040051D02D /* Openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843496381FB146040051D02D /* Openssl.framework */; };
 		8434963D1FB1495F0051D02D /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434963C1FB1495F0051D02D /* MineViewController.m */; };
 		8434963F1FB14B160051D02D /* Aviation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8434963E1FB14B160051D02D /* Aviation.storyboard */; };
+		846590401FB3DA9E0072C235 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846590361FB3DA9D0072C235 /* Mine.storyboard */; };
+		846590411FB3DA9E0072C235 /* Hotel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846590371FB3DA9D0072C235 /* Hotel.storyboard */; };
+		846590421FB3DA9E0072C235 /* Pay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846590381FB3DA9D0072C235 /* Pay.storyboard */; };
+		846590431FB3DA9E0072C235 /* Flight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846590391FB3DA9D0072C235 /* Flight.storyboard */; };
+		846590441FB3DA9E0072C235 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465903A1FB3DA9D0072C235 /* Login.storyboard */; };
+		846590451FB3DA9E0072C235 /* mines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465903B1FB3DA9E0072C235 /* mines.storyboard */; };
+		846590461FB3DA9E0072C235 /* Aviation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465903C1FB3DA9E0072C235 /* Aviation.storyboard */; };
+		846590471FB3DA9E0072C235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465903D1FB3DA9E0072C235 /* Main.storyboard */; };
+		846590481FB3DA9E0072C235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465903E1FB3DA9E0072C235 /* LaunchScreen.storyboard */; };
+		846590491FB3DA9E0072C235 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465903F1FB3DA9E0072C235 /* Detail.storyboard */; };
+		8465904C1FB3DB850072C235 /* CityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465904A1FB3DB850072C235 /* CityTableViewController.m */; };
+		8465904F1FB3DB900072C235 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465904D1FB3DB900072C235 /* DetailViewController.m */; };
+		846590521FB3DBA60072C235 /* DemandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846590501FB3DBA60072C235 /* DemandViewController.m */; };
 		B203462F1FB18C1600094259 /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346031FB18C1600094259 /* BasicEncodingRules.m */; };
 		B20346301FB18C1600094259 /* GBAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346081FB18C1600094259 /* GBAlipayManager.m */; };
 		B20346311FB18C1600094259 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B203460B1FB18C1600094259 /* base64.m */; };
@@ -53,9 +63,7 @@
 		B20346531FB18CE600094259 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20346511FB18CBB00094259 /* CoreTelephony.framework */; };
 		B20346541FB18CF100094259 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20346521FB18CC800094259 /* CoreMotion.framework */; };
 		B203465A1FB192D400094259 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20346591FB192D400094259 /* MineViewController.m */; };
-		B20346601FB1A07700094259 /* PayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203465E1FB1A07700094259 /* PayTableViewController.m */; };
 		B27E821E1FB28C8300AFA7BA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27E821D1FB28C8300AFA7BA /* LoginViewController.m */; };
-		B27E82201FB2901500AFA7BA /* mines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27E821F1FB2901500AFA7BA /* mines.storyboard */; };
 		B27E82271FB29BE500AFA7BA /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27E82261FB29BE500AFA7BA /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -96,9 +104,6 @@
 		843495E71FB1391C0051D02D /* LoginTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewController.m; sourceTree = "<group>"; };
 		843495EA1FB1391C0051D02D /* GetHotels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GetHotels.xcdatamodel; sourceTree = "<group>"; };
 		843496021FB13A3F0051D02D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		843496031FB13A3F0051D02D /* Hotel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hotel.storyboard; sourceTree = "<group>"; };
-		843496041FB13A3F0051D02D /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		843496051FB13A3F0051D02D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8434960E1FB13AEF0051D02D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8434960F1FB13AEF0051D02D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		843496371FB143530051D02D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -106,6 +111,22 @@
 		8434963B1FB1495F0051D02D /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		8434963C1FB1495F0051D02D /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		8434963E1FB14B160051D02D /* Aviation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Aviation.storyboard; sourceTree = "<group>"; };
+		846590361FB3DA9D0072C235 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
+		846590371FB3DA9D0072C235 /* Hotel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hotel.storyboard; sourceTree = "<group>"; };
+		846590381FB3DA9D0072C235 /* Pay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pay.storyboard; sourceTree = "<group>"; };
+		846590391FB3DA9D0072C235 /* Flight.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Flight.storyboard; sourceTree = "<group>"; };
+		8465903A1FB3DA9D0072C235 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		8465903B1FB3DA9E0072C235 /* mines.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mines.storyboard; sourceTree = "<group>"; };
+		8465903C1FB3DA9E0072C235 /* Aviation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Aviation.storyboard; sourceTree = "<group>"; };
+		8465903D1FB3DA9E0072C235 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8465903E1FB3DA9E0072C235 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8465903F1FB3DA9E0072C235 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		8465904A1FB3DB850072C235 /* CityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewController.m; sourceTree = "<group>"; };
+		8465904B1FB3DB850072C235 /* CityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewController.h; sourceTree = "<group>"; };
+		8465904D1FB3DB900072C235 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8465904E1FB3DB900072C235 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		846590501FB3DBA60072C235 /* DemandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemandViewController.m; sourceTree = "<group>"; };
+		846590511FB3DBA60072C235 /* DemandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemandViewController.h; sourceTree = "<group>"; };
 		8B21A05484BBD2B8008DD3B5 /* Pods-GetHotels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetHotels.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetHotels/Pods-GetHotels.release.xcconfig"; sourceTree = "<group>"; };
 		AE4E6E77482CFC29B893CA0E /* Pods-GetHotels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetHotels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetHotels/Pods-GetHotels.debug.xcconfig"; sourceTree = "<group>"; };
 		B20346021FB18C1600094259 /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
@@ -161,11 +182,8 @@
 		B20346521FB18CC800094259 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B20346581FB192D400094259 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		B20346591FB192D400094259 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		B203465E1FB1A07700094259 /* PayTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PayTableViewController.m; path = /Users/admin1/Desktop/GetHotels/GetHotels/GetHotels/PayTableViewController.m; sourceTree = "<absolute>"; };
-		B203465F1FB1A07700094259 /* PayTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PayTableViewController.h; path = /Users/admin1/Desktop/GetHotels/GetHotels/GetHotels/PayTableViewController.h; sourceTree = "<absolute>"; };
 		B27E821C1FB28C8300AFA7BA /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B27E821D1FB28C8300AFA7BA /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		B27E821F1FB2901500AFA7BA /* mines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mines.storyboard; sourceTree = "<group>"; };
 		B27E82251FB29BE500AFA7BA /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		B27E82261FB29BE500AFA7BA /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		FFF36DA43737E7037EF62D4A /* libPods-GetHotels.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GetHotels.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,6 +233,7 @@
 				843495A61FB135430051D02D /* Products */,
 				A46D7358E750C68A166E7F13 /* Pods */,
 				BC4258768991716095F17578 /* Frameworks */,
+				846590351FB3D88F0072C235 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,8 +258,6 @@
 				843495E01FB1391C0051D02D /* Controller */,
 				843495A81FB135430051D02D /* AppDelegate.h */,
 				843495A91FB135430051D02D /* AppDelegate.m */,
-				B203465F1FB1A07700094259 /* PayTableViewController.h */,
-				B203465E1FB1A07700094259 /* PayTableViewController.m */,
 				843495B91FB135430051D02D /* Info.plist */,
 				843495BA1FB135430051D02D /* main.m */,
 				843496371FB143530051D02D /* PrefixHeader.pch */,
@@ -282,8 +299,12 @@
 		843495E11FB1391C0051D02D /* Hotels */ = {
 			isa = PBXGroup;
 			children = (
+				8465904E1FB3DB900072C235 /* DetailViewController.h */,
+				8465904D1FB3DB900072C235 /* DetailViewController.m */,
 				843495E21FB1391C0051D02D /* CityTableViewController.h */,
+				8465904B1FB3DB850072C235 /* CityTableViewController.h */,
 				843495E31FB1391C0051D02D /* CityTableViewController.m */,
+				8465904A1FB3DB850072C235 /* CityTableViewController.m */,
 				843495E41FB1391C0051D02D /* HotelsViewController.h */,
 				843495E51FB1391C0051D02D /* HotelsViewController.m */,
 			);
@@ -304,9 +325,16 @@
 			isa = PBXGroup;
 			children = (
 				843496021FB13A3F0051D02D /* Assets.xcassets */,
-				843496031FB13A3F0051D02D /* Hotel.storyboard */,
-				843496041FB13A3F0051D02D /* Login.storyboard */,
-				843496051FB13A3F0051D02D /* Main.storyboard */,
+				8465903C1FB3DA9E0072C235 /* Aviation.storyboard */,
+				8465903F1FB3DA9E0072C235 /* Detail.storyboard */,
+				846590391FB3DA9D0072C235 /* Flight.storyboard */,
+				846590371FB3DA9D0072C235 /* Hotel.storyboard */,
+				8465903E1FB3DA9E0072C235 /* LaunchScreen.storyboard */,
+				8465903A1FB3DA9D0072C235 /* Login.storyboard */,
+				8465903D1FB3DA9E0072C235 /* Main.storyboard */,
+				846590361FB3DA9D0072C235 /* Mine.storyboard */,
+				8465903B1FB3DA9E0072C235 /* mines.storyboard */,
+				846590381FB3DA9D0072C235 /* Pay.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,11 +350,19 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
+		846590351FB3D88F0072C235 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				8434963E1FB14B160051D02D /* Aviation.storyboard */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		84F679BA1FB2DA63009DB0C6 /* Flight */ = {
 			isa = PBXGroup;
 			children = (
-				84F679BB1FB2DAEE009DB0C6 /* DemandViewController.h */,
-				84F679BC1FB2DAEE009DB0C6 /* DemandViewController.m */,
+				846590511FB3DBA60072C235 /* DemandViewController.h */,
+				846590501FB3DBA60072C235 /* DemandViewController.m */,
 			);
 			path = Flight;
 			sourceTree = "<group>";
@@ -565,12 +601,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846590451FB3DA9E0072C235 /* mines.storyboard in Resources */,
+				846590411FB3DA9E0072C235 /* Hotel.storyboard in Resources */,
 				843496081FB13A3F0051D02D /* Assets.xcassets in Resources */,
-				84F679B41FB2D031009DB0C6 /* LaunchScreen.storyboard in Resources */,
-				843496091FB13A3F0051D02D /* Hotel.storyboard in Resources */,
 				8434963F1FB14B160051D02D /* Aviation.storyboard in Resources */,
-				8434960A1FB13A3F0051D02D /* Login.storyboard in Resources */,
-				8434960B1FB13A3F0051D02D /* Main.storyboard in Resources */,
+				846590401FB3DA9E0072C235 /* Mine.storyboard in Resources */,
+				846590431FB3DA9E0072C235 /* Flight.storyboard in Resources */,
+				846590471FB3DA9E0072C235 /* Main.storyboard in Resources */,
+				846590491FB3DA9E0072C235 /* Detail.storyboard in Resources */,
+				846590461FB3DA9E0072C235 /* Aviation.storyboard in Resources */,
+				846590481FB3DA9E0072C235 /* LaunchScreen.storyboard in Resources */,
+				846590441FB3DA9E0072C235 /* Login.storyboard in Resources */,
+				846590421FB3DA9E0072C235 /* Pay.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,7 +696,6 @@
 				B20346381FB18C1600094259 /* RSADataVerifier.m in Sources */,
 				B27E82271FB29BE500AFA7BA /* SignUpViewController.m in Sources */,
 				843495F41FB1391C0051D02D /* CityTableViewController.m in Sources */,
-				84F679B71FB2D099009DB0C6 /* PayViewController.m in Sources */,
 				B20346401FB18C1600094259 /* StorageMgr.m in Sources */,
 				B203465A1FB192D400094259 /* MineViewController.m in Sources */,
 				B20346301FB18C1600094259 /* GBAlipayManager.m in Sources */,
@@ -662,22 +703,23 @@
 				843495F61FB1391C0051D02D /* LoginTableViewController.m in Sources */,
 				B203463D1FB18C1600094259 /* NSDateFormatter+Category.m in Sources */,
 				B203463A1FB18C1600094259 /* ErrorHandler.m in Sources */,
-				B20346601FB1A07700094259 /* PayTableViewController.m in Sources */,
 				843495F51FB1391C0051D02D /* HotelsViewController.m in Sources */,
 				843496101FB13AEF0051D02D /* MainViewController.m in Sources */,
 				843495BB1FB135430051D02D /* main.m in Sources */,
 				B203463C1FB18C1600094259 /* NSDate+Utility.m in Sources */,
 				B203463F1FB18C1600094259 /* RequestAPI.m in Sources */,
+				8465904C1FB3DB850072C235 /* CityTableViewController.m in Sources */,
 				B203464C1FB18C7800094259 /* Order.m in Sources */,
 				B20346391FB18C1600094259 /* AppAPIClient.m in Sources */,
 				B203463E1FB18C1600094259 /* NSString+Crypt.m in Sources */,
 				B20346311FB18C1600094259 /* base64.m in Sources */,
 				B20346321FB18C1600094259 /* DataSigner.m in Sources */,
 				B20346351FB18C1600094259 /* NSDataEx.m in Sources */,
-				84F679BD1FB2DAEE009DB0C6 /* DemandViewController.m in Sources */,
 				B203463B1FB18C1600094259 /* NSData+Base64.m in Sources */,
 				843495AA1FB135430051D02D /* AppDelegate.m in Sources */,
+				8465904F1FB3DB900072C235 /* DetailViewController.m in Sources */,
 				B20346341FB18C1600094259 /* MD5DataSigner.m in Sources */,
+				846590521FB3DBA60072C235 /* DemandViewController.m in Sources */,
 				843495F71FB1391C0051D02D /* GetHotels.xcdatamodeld in Sources */,
 				B27E821E1FB28C8300AFA7BA /* LoginViewController.m in Sources */,
 			);
