@@ -250,7 +250,7 @@
     //NSLog(@"end:%f",endTime);
    // NSLog(@"文本:%@",_endDateBtn.titleLabel.text);
     if(startTime>=endTime){
-        [Utilities popUpAlertViewWithMsg:@"结束日期小于等于开始日期" andTitle:@"提示" onView:self];
+        [Utilities popUpAlertViewWithMsg:@"请选择正确的时间" andTitle:@"提示" onView:self];
          _PurcharseBtn.enabled = NO;
     }else{
     
