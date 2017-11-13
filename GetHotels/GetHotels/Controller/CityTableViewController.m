@@ -112,13 +112,13 @@
     if ([fileMgr fileExistsAtPath:filePath]) {
         //将文件内容读取为对应文件
         NSDictionary *fileContent = [NSDictionary dictionaryWithContentsOfFile:filePath];
-        //判断读取到的内容是否存在（判断文件是否损坏）
+        //判断读取到的内容是否存在
         if (fileContent) {
            // NSLog(@"fileContent:%@",fileContent);
             _cities = fileContent;
             //获取字典所有的键
             NSArray *rawKeys = [fileContent allKeys];
-            //根据拼音首字母进行能够识别多音字的升序排序（localizedStandardCompare很棒的一个方法）
+            //根据拼音首字母进行能够识别多音字的升序排序
             _keys = [rawKeys sortedArrayUsingSelector:@selector(localizedStandardCompare:)];
         }
     }
@@ -134,7 +134,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     //获取当前正在渲染的组的名称
     NSString *key = _keys[section];
-    //根据组的名称作为键，来查询到对应的值（这个值就是这一组城市对应城市数组）
+    //根据组的名称作为键，来查询到对应的值
     NSDictionary *sectionCities = _cities[key];
     //返回这一组城市的个数来作为行数
     return sectionCities.count;
@@ -146,7 +146,7 @@
     
     //获取当前正在渲染的组的名称
     NSString *key = _keys[indexPath.section];
-    //根据组的名称作为键，来查询到对应的值（这个值就是这一组城市对应城市数组）
+    //根据组的名称作为键，来查询到对应的值
     NSArray *sectionCities = _cities[key];
     NSDictionary *city = sectionCities[indexPath.row];
     cell.textLabel.text =city[@"name"];
@@ -182,15 +182,7 @@
     return _keys;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

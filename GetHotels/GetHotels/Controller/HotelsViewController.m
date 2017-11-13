@@ -310,7 +310,7 @@
     cell.distance.text = distance;
  
     NSURL *URL = [NSURL URLWithString:hotelsModel.hotel_img];
-  //不知道啥，加了可以请求到酒店图片
+    
     NSString *userAgent = @"";
     userAgent = [NSString stringWithFormat:@"%@/%@ (%@; iOS %@; Scale/%0.2f)", [[[NSBundle mainBundle] infoDictionary] objectForKey:(__bridge NSString *)kCFBundleExecutableKey] ?: [[[NSBundle mainBundle] infoDictionary] objectForKey:(__bridge NSString *)kCFBundleIdentifierKey], [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"] ?: [[[NSBundle mainBundle] infoDictionary] objectForKey:(__bridge NSString *)kCFBundleVersionKey], [[UIDevice currentDevice] model], [[UIDevice currentDevice] systemVersion], [[UIScreen mainScreen] scale]];
     
@@ -417,7 +417,7 @@
                 [[StorageMgr singletonStorageMgr] addKey:@"LocCity" andValue:cityStr];
                 if (![cityStr isEqualToString:_cityBtn.titleLabel.text]) {
                     //当定位到的城市和当前选择的城市不一样的时候，弹窗询问是否要切换城市
-                    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"提示" message:[NSString stringWithFormat:@"当前定位到的城市为%@,是否切换",cityStr] preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:[NSString stringWithFormat:@"你当前定位到%@，是否前往！",cityStr] preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction *yesAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                         //修改城市按钮标题
                         [_cityBtn setTitle:cityStr forState:UIControlStateNormal];
@@ -431,9 +431,9 @@
                     UIAlertAction *noAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                         
                     }];
-                    [alertView addAction:yesAction];
-                    [alertView addAction:noAction];
-                    [self presentViewController:alertView animated:YES completion:nil];
+                    [alert addAction:yesAction];
+                    [alert addAction:noAction];
+                    [self presentViewController:alert animated:YES completion:nil];
                 }
             }
         }];

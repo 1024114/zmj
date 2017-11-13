@@ -58,6 +58,7 @@
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     //设置导航条上按钮的风格颜色
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
     //设置是否需要毛玻璃效果
     self.navigationController.navigationBar.translucent = YES;
     //给按钮添加事件

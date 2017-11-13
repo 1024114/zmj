@@ -9,8 +9,9 @@
 #import "PayViewController.h"
 #import "PayTableViewCell.h"
 #import "DetailViewController.h"
+#import "GBAlipayManager.h"
 @interface PayViewController ()
-@property (strong,nonatomic)NSArray *arr;
+
 @property (weak, nonatomic) IBOutlet UILabel *hotelNameLbl;
 @property (weak, nonatomic) IBOutlet UILabel *dateLbl;
 @property (weak, nonatomic) IBOutlet UILabel *priceLbl;
@@ -18,6 +19,7 @@
 - (IBAction)PayAction:(UIButton *)sender forEvent:(UIEvent *)event;
 @property (weak, nonatomic) IBOutlet UITableView *PayTableView;
 
+@property (strong,nonatomic)NSArray *arr;
 @end
 
 @implementation PayViewController
@@ -27,7 +29,7 @@
     _arr = @[@"支付宝支付",@"微信支付",@"银联支付"];
     [self naviConfig];
     [self uiLayout];
-  
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -113,6 +115,6 @@
 */
 
 - (IBAction)PayAction:(UIButton *)sender forEvent:(UIEvent *)event {
-     
+    
 }
 @end

@@ -485,7 +485,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYG-gy-Fh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="185" y="-136"/>
+            <point key="canvasLocation" x="-263" y="-136"/>
         </scene>
         <!--会员登录-->
         <scene sceneID="vOb-Nh-jPo">
@@ -639,7 +639,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htK-Vz-how" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-44" y="627.4362818590705"/>
+            <point key="canvasLocation" x="-175" y="627"/>
         </scene>
         <!--会员注册-->
         <scene sceneID="kmi-Gd-fhQ">
@@ -815,7 +815,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXU-rz-XhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000.8" y="626.53673163418296"/>
+            <point key="canvasLocation" x="794" y="639"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OAj-Kc-GLQ">
@@ -849,6 +849,7 @@
         <image name="默认头像" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="E5d-aS-KCk"/>
         <segue reference="CL8-TI-QNp"/>
     </inferredMetricsTieBreakers>
 </document>
