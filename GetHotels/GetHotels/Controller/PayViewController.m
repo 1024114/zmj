@@ -115,6 +115,47 @@
 */
 
 - (IBAction)PayAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    //拿到选中行的行号
+    NSInteger row = [self.PayTableView indexPathForSelectedRow].row;
+    switch (row) {
+        case 0:
+        {
+            NSString *tradeNO = [GBAlipayManager generateTradeNO];
+            [GBAlipayManager alipayWithProductName:_name amount:_applyFee tradeNO:tradeNO notifyURL:[NSString stringWithFormat:@"www.fisheep.com?tradeNO=%@",tradeNO] productDescription:[NSString stringWithFormat:@"%@",_name] itBPay:@"30"];
+        };
+            break;
+        case 1:
+            
+            break;
+            
+        default:
+            
+            break;
+    }
+}
+//监听到支付结果后做什么
+-(void)dealAlipayResult:(NSNotification *)notification{
+    //拿到通知携带的参数
+    NSString *result = notification.object;
+    if([result isEqualToString:@"9000"]){
+        [self payResultAlert:@"支付成功"];
+    }else{
+        [self payResultAlert:@"支付失败"];
+        
+    }
     
+}
+-(void)payResultAlert:(NSString *)message{
+    //创建提示框
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"支付成功!" preferredStyle:UIAlertControllerStyleAlert];
+    //按钮
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //回到上个页面
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
+    //将按钮添加到提示框中
+    [alert addAction:action];
+    //显示提示框
+    [self presentViewController:alert animated:YES completion:nil];
 }
 @end

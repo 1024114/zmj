@@ -230,11 +230,8 @@
 
 - (IBAction)cityAction:(UIButton *)sender forEvent:(UIEvent *)event {
     NSNotificationCenter *noteCenter = [NSNotificationCenter defaultCenter];
-    //A
-    //[noteCenter postNotificationName:@"ResetHome" object:nil];
-    //B
+    
     NSNotification *note = [NSNotification notificationWithName:@"ResetHome" object:[[StorageMgr singletonStorageMgr] objectForKey:@"LocCity"]];
-    //[noteCenter postNotification:note];
     //结合线程的通知，表示先让通知接收者完成它收到通知要做的事以后再执行别的任务
     [noteCenter performSelectorOnMainThread:@selector(postNotification:) withObject:note waitUntilDone:YES];
     //返回上一页
