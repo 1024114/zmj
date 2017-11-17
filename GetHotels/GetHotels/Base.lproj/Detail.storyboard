@@ -587,7 +587,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdF-A9-er9">
                                         <rect key="frame" x="0.0" y="180" width="375" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="酒店" translatesAutoresizingMaskIntoConstraints="NO" id="UDD-Qq-grW">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotel" translatesAutoresizingMaskIntoConstraints="NO" id="UDD-Qq-grW">
                                                 <rect key="frame" x="15" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="UDD-Qq-grW" secondAttribute="height" multiplier="1:1" id="NYX-rj-Qb7"/>
@@ -731,7 +731,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SK4-88-fhP">
                                         <rect key="frame" x="0.0" y="297" width="375" height="100"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="酒店-1" translatesAutoresizingMaskIntoConstraints="NO" id="hzy-yr-jvS">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hzy-yr-jvS">
                                                 <rect key="frame" x="15" y="18" width="80" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="hzy-yr-jvS" secondAttribute="height" multiplier="5:4" id="J3d-Gm-W0Z"/>
@@ -1130,7 +1130,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4F-lu-aUe">
                                         <rect key="frame" x="0.0" y="180" width="375" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="酒店" translatesAutoresizingMaskIntoConstraints="NO" id="36p-l0-EtL">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotel" translatesAutoresizingMaskIntoConstraints="NO" id="36p-l0-EtL">
                                                 <rect key="frame" x="15" y="10" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="36p-l0-EtL" secondAttribute="height" multiplier="1:1" id="2OD-t7-usM"/>
@@ -1274,7 +1274,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Sv-nz-Xej">
                                         <rect key="frame" x="0.0" y="296.5" width="375" height="100"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="酒店-1" translatesAutoresizingMaskIntoConstraints="NO" id="trW-c4-Kzs">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="trW-c4-Kzs">
                                                 <rect key="frame" x="15" y="18" width="80" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="trW-c4-Kzs" secondAttribute="height" multiplier="5:4" id="B02-iS-QZ3"/>
@@ -1664,9 +1664,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="hotel" width="22" height="22"/>
         <image name="location" width="11" height="15"/>
         <image name="定位" width="49" height="54"/>
         <image name="酒店" width="22" height="21"/>
-        <image name="酒店-1" width="268" height="151"/>
     </resources>
 </document>

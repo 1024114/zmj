@@ -152,7 +152,7 @@
     _endDateBtn.titleLabel.text = _istomoDay;
     NSURL *URL = [NSURL URLWithString:_Hotel.hotel_img];
     [_UIimage sd_setImageWithURL:URL placeholderImage:[UIImage imageNamed:@"大床房"]];
-    //_UIimage.image = [UIImage imageNamed:@"酒店-1"];
+    
     [ _roomTypeBtn setTitle: _Hotel.hotel_types[0] forState:UIControlStateNormal];
     _breakfastLbl.text = _Hotel.hotel_types[1];
     _bedTypeLbl.text = _Hotel.hotel_types[2];
@@ -203,17 +203,7 @@
             
             
                 [self addZLImageViewDisPlayView:_AdImgarr];
-         
-//            for (NSDictionary *dict in result) {
-//                HotelsModel *resultModel = [[HotelsModel alloc] initWithDict:dict];
-//                //  NSLog(@"结果：%@",resultModel.hotel_name);
-//                //  NSLog(@"距离：%@",resultModel.distance);
-//                //  NSLog(@"图片地址：%@",resultModel.hotel_img);
-//             //   [_firstResArr addObject:resultModel];
-//           }
-//            
-//         //   [_hotelsTableView reloadData];
-//            
+            
         }else{
             //业务逻辑失败的情况下
             NSString *errorMsg = [ErrorHandler getProperErrorString:[responseObject[@"result"] integerValue]];
