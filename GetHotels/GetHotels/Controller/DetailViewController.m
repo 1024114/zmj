@@ -320,17 +320,12 @@
       if(![_istomoDay isEqualToString:_endDateBtn.titleLabel.text]){
           _endDayLbl.hidden = YES;
       }
-         _superView.hidden = YES;
+        _superView.hidden = YES;
         _toolBar.hidden = YES;
         _dataPicker.hidden = YES;
-      
       
       }
    
     }
-
-
-
-
 
 @end

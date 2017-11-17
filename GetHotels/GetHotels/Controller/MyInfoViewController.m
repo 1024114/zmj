@@ -134,11 +134,10 @@
                 //创建提示框的确认按钮
                 UIAlertAction *actionA = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 }];
-                
-                
                 //创建提示框的取消按钮
                 UIAlertAction *actionB = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                 }];
+                
                 //将按钮添加到提示框中 （多个按钮从左到右，从上到下，如果按钮的风格是UIAlertActionStyleCancel 是中是最左或者最下）
                 [alert addAction:actionA];
                 [alert addAction:actionB];
