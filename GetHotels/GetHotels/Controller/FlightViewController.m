@@ -8,52 +8,53 @@
 
 #import "FlightViewController.h"
 
+
 @interface FlightViewController (){
-    NSTimeInterval StartTime;
-    NSTimeInterval EndTime;
-    NSInteger flag;
+    BOOL tags;
+    BOOL tagsCity;
     
 }
+@property (weak, nonatomic) IBOutlet UIButton *lowTimeBtn;//最早时间
+@property (weak, nonatomic) IBOutlet UIButton *highTimeBtn;//最晚时间
+@property (weak, nonatomic) IBOutlet UIButton *startBtn;//出发地
+@property (weak, nonatomic) IBOutlet UIButton *endBtn;//目的地
+@property (weak, nonatomic) IBOutlet UITextField *lowPriceTextField;//最低价格
+@property (weak, nonatomic) IBOutlet UITextField *highPriceTextField;//最高价格
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;//标题
+@property (weak, nonatomic) IBOutlet UIDatePicker *pickerView;
+@property (weak, nonatomic) IBOutlet UITextField *detailTextField;//详情
+- (IBAction)lowTimeAction:(UIButton *)sender forEvent:(UIEvent *)event;
+- (IBAction)highTimeAction:(UIButton *)sender forEvent:(UIEvent *)event;
+- (IBAction)startAction:(UIButton *)sender forEvent:(UIEvent *)event;
+- (IBAction)endAction:(UIButton *)sender forEvent:(UIEvent *)event;
+- (IBAction)connectAction:(UIBarButtonItem *)sender;
+@property (strong, nonatomic) IBOutlet UIView *view1;
+- (IBAction)cancelAction:(UIBarButtonItem *)sender;
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
+- (IBAction)postAction:(UIButton *)sender forEvent:(UIEvent *)event;
+@property(nonatomic)NSTimeInterval startTime;
+@property(nonatomic)NSTimeInterval arrTime;
+@property(nonatomic)NSTimeInterval tempTime;
+@property(strong,nonatomic)NSMutableArray *selectOfferArr;
+@property (weak, nonatomic) IBOutlet UIView *View2;
 
-@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
-@property (weak, nonatomic) IBOutlet UILabel *setOutDay;
-
-@property (weak, nonatomic) IBOutlet UILabel *arriveDay;
-@property (weak, nonatomic) IBOutlet UIButton *setOutDate;
-@property (weak, nonatomic) IBOutlet UIButton *arriveDate;
-@property (weak, nonatomic) IBOutlet UIButton *setOutCity;
-@property (weak, nonatomic) IBOutlet UIButton *arriveCity;
-
-
-@property (weak, nonatomic) IBOutlet UITextField *lowPrice;
-@property (weak, nonatomic) IBOutlet UITextField *highPrice;
-@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
-@property (weak, nonatomic) IBOutlet UITextField *detailsTextField;
-@property (weak, nonatomic) IBOutlet UIButton *releaseBtn;
-@property (weak, nonatomic) IBOutlet UIDatePicker *timePickerView;
-
-
-- (IBAction)setOutDateAction:(UIButton *)sender forEvent:(UIEvent *)event;
-- (IBAction)arriveDateAction:(UIButton *)sender forEvent:(UIEvent *)event;
-- (IBAction)setOutCityAction:(UIButton *)sender forEvent:(UIEvent *)event;
-- (IBAction)arriveCityAction:(UIButton *)sender forEvent:(UIEvent *)event;
-
-- (IBAction)releaseAction:(UIButton *)sender forEvent:(UIEvent *)event;
-
-@property (strong,nonatomic)NSString *istoDay;
 @end
 
 @implementation FlightViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self naviConfig];
-//    [self offerRequest];
-    // Do any additional setup after loading the view.
-    self.navigationController.navigationBar.hidden = YES;
-    //设置pickView的背景颜色
-    _timePickerView.backgroundColor = [UIColor colorWithRed:200/255.0 green:200/255.0 blue:200/255.0 alpha:1];
-   
+    [self dataInitialize];
+    [self uiLayout];
+    [self navigationConfiguration];
+    //监听选择城市后的通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resetHome:) name:@"ResetHome" object:nil];
+//    //注册键盘弹出通知
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:)name:UIKeyboardWillShowNotification object:nil];
+//    //注册键盘隐藏通知
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:)name:UIKeyboardWillHideNotification object:nil];
+    [self setShadow];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,100 +62,213 @@
     // Dispose of any resources that can be recreated.
 }
 
-//这个方法做导航条的基本属性设置
--(void)naviConfig{
-    self.navigationItem.title = @"航空";
-    //设置导航条的颜色（风格颜色）
-    self.navigationController.navigationBar.barTintColor = UIColorFromRGB(20, 124, 236);
-    //设置导航条标题颜色
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
-    //设置导航条是否被隐藏
-    self.navigationController.navigationBar.hidden = NO;
-    
-    //设置导航条上按钮的风格颜色
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    //设置是否需要毛玻璃效果
-    self.navigationController.navigationBar.translucent = YES;
-    [self.view setBackgroundColor:[UIColor colorWithRed:239.0/255 green:239.0/255 blue:239.0/255 alpha:1.0f]];
-    //设置头像为圆形
-    _headImageView.layer.cornerRadius = _headImageView.frame.size.width / 3;
-    
+//关于数据的初始化
+-(void)dataInitialize{
+    _startTime = [NSDate.date timeIntervalSince1970];
+    _arrTime = [NSDate.dateTomorrow timeIntervalSince1970];
+    _selectOfferArr = [NSMutableArray new];
+    tags = nil;
+    tagsCity = nil;
 }
-////监听到选择城市的通知后做什么
-//-(void)resetHome:(NSNotification *)notification{
-//    //NSLog(@"监听到了");
-//    //拿到通知所携带的参数
-//    NSString *city = notification.object;
-//    //非空检查
-//    if (![[Utilities getUserDefaults:@"UserCity"] isKindOfClass:[NSNull class]]) {
-//        if ([Utilities getUserDefaults:@"UserCity"] != nil) {
-//            //判断选择到的城市名和当前页面显示的城市名是否一致
-//            if (![[Utilities getUserDefaults:@"UserCity"] isEqualToString:city]) {
-//                //不但要替换掉城市按钮的标题，而且还要替换单例化全局变量中的值
-//                [Utilities removeUserDefaults:@"UserCity"];
-//                [Utilities setUserDefaults:@"UserCity" content:city];
-//            }
-//        }
-//    }
-//}
-//
-//
-//-(void)offerRequest{
-//    double price=[_lowPrice.text doubleValue];//价格
-//
-//
-//    NSString *intimestr=_setOutDate.titleLabel.text;//出发时间
-//
-//    NSString *outtimestr=_arriveDate.titleLabel.text;//到达时间
-//    NSString *departurestr=_setOutCity.titleLabel.text;//出发地
-//    NSString *destinationstr=_arriveCity.titleLabel.text;//目的地
-// //航班
-//
-//    NSDictionary *para=@{@"business_id":@2,@"aviation_demand_id":[[StorageMgr singletonStorageMgr]objectForKey:@"id"],@"final_price":@(price),@"in_time_str":intimestr,@"out_time_str":outtimestr,@"departure":departurestr,@"destination":destinationstr};
-//    [RequestAPI requestURL:@"/offer_edu" withParameters:para andHeader:nil byMethod:kPost andSerializer:kForm success:^(id responseObject) {
-//
-//
-//    } failure:^(NSInteger statusCode, NSError *error) {}];
-//}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+//关于界面的操作
 -(void)uiLayout{
-    _setOutDate = [NSDate date];//调用该行代码的时间
-    NSDateFormatter *nowformatter = [[NSDateFormatter alloc] init];
-    nowformatter.dateFormat = @"MM月dd日";
-    _istoDay = [nowformatter stringFromDate:_setOutDate];
-    [[StorageMgr singletonStorageMgr] addKey:@"startTime" andValue:_istoDay];
-    [_setOutDate setTitle:_istoDay forState:UIControlStateNormal];
-    _setOutDate.titleLabel.text = _istoDay;
+    [[UIPickerView appearance] setBackgroundColor:[UIColor whiteColor]];
 }
 
-
-- (IBAction)setOutDateAction:(UIButton *)sender forEvent:(UIEvent *)event {
-    NSTimeInterval  setOutDateAction = [Utilities cTimestampFromString:_setOutDate.titleLabel.text format:@"MM月dd日"];
-    NSLog(@"setOut:%f",setOutDateAction);
-    //显示PickerView
-    _timePickerView.hidden = NO;
+//设置导航栏的方法
+- (void)navigationConfiguration{
+    //设置导航栏标题颜色
+    //创建一个属性字典
+    NSDictionary *titleTextOption = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    //将上述的数字字典配置给导航栏的标题
+    [self.navigationController.navigationBar setTitleTextAttributes:titleTextOption];
+    //更改导航栏的标题
+    self.navigationItem.title = @"发布需求";
+    //设置导航栏颜色（风格颜色：导航栏整体的背景色和状态栏整体的背景色）
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:41.f/255.f green:124.f/255.f blue:246.f/255.f alpha:1];
+    //配置导航栏的毛玻璃效果 YES表示有  NO表示没有
+    [self.navigationController.navigationBar setTranslucent:NO];
+    //设置导航栏是否隐藏
+    self.navigationController.navigationBar.hidden = NO;
+    //配置导航栏上的item的风格颜色（如果是文字则文字变成白色，如果是图片则图片的透明部分变成白色）
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
-- (IBAction)arriveDateAction:(UIButton *)sender forEvent:(UIEvent *)event {
-    _timePickerView.hidden = NO;
+#pragma mark - Hiddenkeyboard
+//Return键是否能被点击 返回YES表示能点，返回NO表示不能被点
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    //收起键盘
+    //[textField resignFirstResponder];
+    [self.view endEditing:YES];
+    return YES;
 }
 
-- (IBAction)setOutCityAction:(UIButton *)sender forEvent:(UIEvent *)event {
+//点击键盘以外的部分收起键盘
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
 }
 
-- (IBAction)arriveCityAction:(UIButton *)sender forEvent:(UIEvent *)event {
+////键盘弹出后将视图向上移动
+//-(void)keyboardWillShow:(NSNotification *)note
+//{
+//    NSDictionary *info = [note userInfo];
+//    CGSize keyboardSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+//    //目标视图
+//    CGRect frame = _view1.frame;
+//    int y = frame.origin.y + frame.size.height - (self.view.frame.size.height - keyboardSize.height);
+//    NSTimeInterval animationDuration = 0.30f;
+//    [UIView beginAnimations:@"ResizeView" context:nil];
+//    [UIView setAnimationDuration:animationDuration];
+//    if(y > 0)
+//    {
+//        self.view.frame = CGRectMake(0, -y, self.view.frame.size.width, self.view.frame.size.height);
+//    }
+//    [UIView commitAnimations];
+//}
+
+//键盘隐藏后将视图恢复到原始状态
+-(void)keyboardWillHide:(NSNotification *)note
+{
+    NSTimeInterval animationDuration = 0.30f;
+    [UIView beginAnimations:@"ResizeView" context:nil];
+    [UIView setAnimationDuration:animationDuration];
+    self.view.frame =CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    [UIView commitAnimations];
 }
 
-- (IBAction)releaseAction:(UIButton *)sender forEvent:(UIEvent *)event {
+#pragma  mark - notification
+-(void)checkDepartCity:(NSNotification *)note{
+    NSString *cityStr=note.object;
+    if(![_startBtn.titleLabel.text isEqualToString:cityStr]){
+        [_startBtn setTitle:cityStr forState:UIControlStateNormal];
+    }
+}
+-(void)checkDestinationCity:(NSNotification *)note{
+    NSString *cityStr=note.object;
+    if(![_endBtn.titleLabel.text isEqualToString:cityStr]){
+        [_endBtn setTitle:cityStr forState:UIControlStateNormal];
+    }
+}
+
+//监听到选择城市的通知后做什么
+-(void)resetHome:(NSNotification *)notification{
+    NSLog(@"监听到了");
+    //拿到通知所携带的参数
+    NSString *city = notification.object;
+    if (tagsCity) {
+        [_endBtn setTitle:city forState:UIControlStateNormal];
+    } else{
+        [_startBtn setTitle:city forState:UIControlStateNormal];
+    }
+}
+#pragma mark -request
+//发布
+-(void)offerRequest{
+    NSString *lowTime = _lowTimeBtn.titleLabel.text;
+    NSString *highTime = _highTimeBtn.titleLabel.text;
+    NSString *start = _startBtn.titleLabel.text;
+    NSString *end = _endBtn.titleLabel.text;
+    NSString *lowPrice = _lowPriceTextField.text;
+    NSString *highPrice = _highPriceTextField.text;
+    NSString *setHour = @"0-24";
+    NSString *detail = _detailTextField.text;
+    NSString *peopleNumber = @"1";
+    NSString *childNumber = @"1";
+    NSString *weight = @"1";
     
+    NSDictionary *para = @{@"openid":[[StorageMgr singletonStorageMgr]objectForKey:@"UserInfo"],@"set_low_time_str":lowTime,@"set_high_time_str":highTime,@"set_hour":setHour,@"departure":start,@"destination":end,@"low_price":lowPrice,@"high_price":highPrice,@"people_number":peopleNumber,@"child_number":childNumber,@"weight":weight,@"aviation_demand_detail":detail};
+    [RequestAPI requestURL:@"/addIssue_edu" withParameters:para andHeader:nil byMethod:kPost andSerializer:kForm success:^(id responseObject) {
+        NSLog(@"responseObject = %@",responseObject);
+        [Utilities popUpAlertViewWithMsg:@"发布成功" andTitle:@"提示" onView:self];
+    } failure:^(NSInteger statusCode, NSError *error) {}];
+    [Utilities popUpAlertViewWithMsg:@"发布失败" andTitle:@"提示" onView:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(nullable id)sender{
+    if ([segue.identifier isEqualToString:@"offerToCity"]) {
+    }
+}
+- (void)setShadow {
+    
+    _View2.layer.shadowColor = [UIColor blackColor].CGColor;//shadowColor阴影颜色
+    _View2.layer.shadowOffset = CGSizeMake(0,0);//shadowOffset阴影偏移,x向右偏移4，y向下偏移4，默认(0, -3),这个跟shadowRadius配合使用
+    _View2.layer.shadowOpacity = 0.7f;//阴影透明度，默认0
+    _View2.layer.shadowRadius = 4.f;//阴影半径，默认3
+}
+- (IBAction)lowTimeAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    _bottomView.hidden = NO;
+    tags=YES;
+}
+
+- (IBAction)highTimeAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    _bottomView.hidden = NO;
+    tags=NO;
+}
+
+- (IBAction)startAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    tagsCity = NO;
+    [self performSegueWithIdentifier:@"flightToCity" sender:nil];
+}
+
+- (IBAction)endAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    tagsCity = YES;
+    [self performSegueWithIdentifier:@"flightToCity" sender:nil];
+}
+
+- (IBAction)connectAction:(UIBarButtonItem *)sender {
+    if(tags){
+        NSDate *pickerDate= _pickerView.date;
+        //datetemp=_datePicker.date;
+        _tempTime = [pickerDate timeIntervalSince1970];
+        if (_startTime > _arrTime) {
+            [Utilities popUpAlertViewWithMsg:@"时间有误" andTitle:@"提示" onView:self];
+            return;
+        }
+        NSDateFormatter *pickerFormatter =[[NSDateFormatter alloc ]init];
+        [pickerFormatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+        NSString *startString =[pickerFormatter stringFromDate:pickerDate];
+        [_lowTimeBtn setTitle:startString forState:UIControlStateNormal];
+        _bottomView.hidden=YES;
+    }
+    
+    else{
+        
+        NSDate *pickerDate= _pickerView.date;
+        _tempTime = [pickerDate timeIntervalSince1970];
+        if (_tempTime < _arrTime) {
+            [Utilities popUpAlertViewWithMsg:@"时间有误" andTitle:@"提示" onView:self];
+            return;
+        }
+        NSDateFormatter *pickerFormatter =[[NSDateFormatter alloc ]init];
+        [pickerFormatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+        NSString *endString =[pickerFormatter stringFromDate:pickerDate];
+        [_highTimeBtn setTitle:endString forState:UIControlStateNormal];
+        _bottomView.hidden=YES;
+        
+    }
+}
+
+- (IBAction)cancelAction:(UIBarButtonItem *)sender {
+    _bottomView.hidden = YES;
+}
+- (IBAction)postAction:(UIButton *)sender forEvent:(UIEvent *)event {
+    if ([_lowTimeBtn.titleLabel.text isEqualToString:@"2月24日"]) {
+        [Utilities popUpAlertViewWithMsg:@"请填写出发时间段" andTitle:@"提示" onView:self];
+    }else if ([_highTimeBtn.titleLabel.text isEqualToString:@"2月25日"]) {
+        [Utilities popUpAlertViewWithMsg:@"请填写出发时间段" andTitle:@"提示" onView:self];
+    }else if ([_startBtn.titleLabel.text isEqualToString:@"请选择城市"]) {
+        [Utilities popUpAlertViewWithMsg:@"请填写出发城市" andTitle:@"提示" onView:self];
+    }else if ([_endBtn.titleLabel.text isEqualToString:@"请选择城市"]) {
+        [Utilities popUpAlertViewWithMsg:@"请填写抵达城市" andTitle:@"提示" onView:self];
+    }else if ([_lowPriceTextField.text isEqualToString:@""]) {
+        [Utilities popUpAlertViewWithMsg:@"请填写最低价格" andTitle:@"提示" onView:self];
+    }else if ([_highPriceTextField.text isEqualToString:@""]) {
+        [Utilities popUpAlertViewWithMsg:@"请填写最高价格" andTitle:@"提示" onView:self];
+    }else if ([_titleTextField.text isEqualToString:@""]) {
+        [Utilities popUpAlertViewWithMsg:@"请填写标题" andTitle:@"提示" onView:self];
+    }else {
+        [self offerRequest];
+    }
 }
 @end

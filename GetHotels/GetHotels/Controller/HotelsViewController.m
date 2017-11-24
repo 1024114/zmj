@@ -336,11 +336,12 @@
 
 //设置每一组中没一行被点击以后要做的事情
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-                [tableView deselectRowAtIndexPath:indexPath animated:YES];
-          //[self.navigationController popViewControllerAnimated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    //[self.navigationController popViewControllerAnimated:YES];
     HotelsModel *model = _firstResArr[indexPath.row];
     NSString *sendId = model.hotelId ;
     [[StorageMgr singletonStorageMgr] addKey:@"sendId" andValue:sendId];
+    
     }
     
     

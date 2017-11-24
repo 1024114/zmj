@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *address;
 @property (weak, nonatomic) IBOutlet UIButton *StartDateBtn;
 @property (weak, nonatomic) IBOutlet UIButton *endDateBtn;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (weak, nonatomic) IBOutlet UILabel *starDayLbl;
 
@@ -41,6 +42,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *luggageLbl;//行李寄存
 @property (weak, nonatomic) IBOutlet UILabel *checkInTimeLbl;
 @property (weak, nonatomic) IBOutlet UILabel *leaveTimeLbl;
+
 @property (weak, nonatomic) IBOutlet UILabel *isCarrayPetLbl;
 @property (weak, nonatomic) IBOutlet UIButton *PurcharseBtn;
 
@@ -70,9 +72,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    _AdImgarr  =   [[NSMutableArray alloc] initWithObjects:@"酒店通用6",@"酒店通用5",@"酒店通用3",@"酒店通用4",nil];
-  
+    
     
 
     [self naviConfig];
@@ -95,7 +95,7 @@
     //设置导航条上按钮的风格颜色
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     //设置是否需要毛玻璃效果
-    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.navigationBar.translucent = NO;
     //实例化一个button 类型为UIButtonTypeSystem
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     //设置位置大小
@@ -105,14 +105,14 @@
     //给按钮添加事件
     [leftBtn addTarget:self action:@selector(leftButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
+    //self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     
 }
-//自定的返回按钮的事件
-- (void)leftButtonAction: (UIButton *)sender{
-    
-     [self.navigationController popViewControllerAnimated:YES];
-}
+////自定的返回按钮的事件
+//- (void)leftButtonAction: (UIButton *)sender{
+//
+//     [self.navigationController popViewControllerAnimated:YES];
+//}
 
 
 -(void) addZLImageViewDisPlayView:(NSArray *)arr{
@@ -151,7 +151,8 @@
     [_endDateBtn setTitle:_istomoDay forState:UIControlStateNormal];
     _endDateBtn.titleLabel.text = _istomoDay;
     NSURL *URL = [NSURL URLWithString:_Hotel.hotel_img];
-    [_UIimage sd_setImageWithURL:URL placeholderImage:[UIImage imageNamed:@"大床房"]];
+    NSLog(@" image = %@",_Hotel.hotel_img);
+   [_imageView sd_setImageWithURL:URL placeholderImage:[UIImage imageNamed:@"hotels"]];
     
     [ _roomTypeBtn setTitle: _Hotel.hotel_types[0] forState:UIControlStateNormal];
     _breakfastLbl.text = _Hotel.hotel_types[1];
