@@ -26,7 +26,7 @@
     [self naviConfig];
     // Do any additional setup after loading the view.
     _myInfoArr = @[@{@"leftIcon":@"酒店",@"title":@"我的酒店"},@{@"leftIcon":@"航班",@"title":@"我的航空"},@{@"leftIcon":@"news",@"title":@"我的消息"},@{@"leftIcon":@"账户设置",@"title":@"账户设置"},@{@"leftIcon":@"使用协议",@"title":@"使用协议"},@{@"leftIcon":@"联系客服",@"title":@"联系客服"}];
-    
+    [self uiLayout];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,8 +47,6 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     //设置是否需要毛玻璃效果
     self.navigationController.navigationBar.translucent = YES;
-   
-    
 }
 //当前页面将要显示的时候，隐藏导航栏
 - (void)viewWillAppear:(BOOL)animated{
@@ -71,6 +69,16 @@
         _headImage.image = [UIImage imageNamed:@"默认头像"];
        
     }
+}
+
+//这个方法用来设置一些控件的属性
+-(void)uiLayout{
+    
+    //设置头像为圆形
+    _headImage.layer.cornerRadius = _headImage.frame.size.width / 2;
+    //设置边框
+    _headImage.layer.borderWidth = 2;
+    _headImage.layer.borderColor = [[UIColor lightGrayColor] CGColor];
 }
 
 /*
@@ -128,6 +136,10 @@
                     [self performSegueWithIdentifier:@"myInfoToHotels" sender:self];
                 }
                     break;
+            case 1:{
+                [self performSegueWithIdentifier:@"myInfoToAir" sender:self];
+            }
+                break;
             case 5:{
                 //创建提示框
                 UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"是否拨打客服电话13286535443" preferredStyle:UIAlertControllerStyleAlert];

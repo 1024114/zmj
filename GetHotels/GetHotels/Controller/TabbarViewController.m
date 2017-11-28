@@ -25,7 +25,7 @@
     nc1.tabBarItem.title = @"航班";
     
     UIViewController *nc2 = [Utilities getStoryboardInstance:@"Myinfo" byIdentity:@"mhstate"];
-    nc2.tabBarItem.image = [[UIImage imageNamed:@"mhstate"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    nc2.tabBarItem.image = [[UIImage imageNamed:@"my"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     nc2.tabBarItem.title = @"我的";
     
     [self addChildViewController:nc];

@@ -177,7 +177,7 @@
     NSString *childNumber = @"1";
     NSString *weight = @"1";
     
-    NSDictionary *para = @{@"openid":[[StorageMgr singletonStorageMgr]objectForKey:@"UserInfo"],@"set_low_time_str":lowTime,@"set_high_time_str":highTime,@"set_hour":setHour,@"departure":start,@"destination":end,@"low_price":lowPrice,@"high_price":highPrice,@"people_number":peopleNumber,@"child_number":childNumber,@"weight":weight,@"aviation_demand_detail":detail};
+    NSDictionary *para = @{@"openid":[Utilities getUserDefaults:@"openid"],@"set_low_time_str":lowTime,@"set_high_time_str":highTime,@"set_hour":setHour,@"departure":start,@"destination":end,@"low_price":lowPrice,@"high_price":highPrice,@"people_number":peopleNumber,@"child_number":childNumber,@"weight":weight,@"aviation_demand_detail":detail};
     [RequestAPI requestURL:@"/addIssue_edu" withParameters:para andHeader:nil byMethod:kPost andSerializer:kForm success:^(id responseObject) {
         NSLog(@"responseObject = %@",responseObject);
         [Utilities popUpAlertViewWithMsg:@"发布成功" andTitle:@"提示" onView:self];
@@ -199,11 +199,13 @@
 - (IBAction)lowTimeAction:(UIButton *)sender forEvent:(UIEvent *)event {
     _bottomView.hidden = NO;
     tags=YES;
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
 
 - (IBAction)highTimeAction:(UIButton *)sender forEvent:(UIEvent *)event {
     _bottomView.hidden = NO;
     tags=NO;
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
 
 - (IBAction)startAction:(UIButton *)sender forEvent:(UIEvent *)event {
@@ -254,19 +256,19 @@
 }
 - (IBAction)postAction:(UIButton *)sender forEvent:(UIEvent *)event {
     if ([_lowTimeBtn.titleLabel.text isEqualToString:@"2月24日"]) {
-        [Utilities popUpAlertViewWithMsg:@"请填写出发时间段" andTitle:@"提示" onView:self];
+        [Utilities popUpAlertViewWithMsg:@"请将信息填写完整" andTitle:@"提示" onView:self];
     }else if ([_highTimeBtn.titleLabel.text isEqualToString:@"2月25日"]) {
-        [Utilities popUpAlertViewWithMsg:@"请填写出发时间段" andTitle:@"提示" onView:self];
+        [Utilities popUpAlertViewWithMsg:@"请将信息填写完整" andTitle:@"提示" onView:self];
     }else if ([_startBtn.titleLabel.text isEqualToString:@"请选择城市"]) {
-        [Utilities popUpAlertViewWithMsg:@"请填写出发城市" andTitle:@"提示" onView:self];
+        [Utilities popUpAlertViewWithMsg:@"请将信息填写完整" andTitle:@"提示" onView:self];
     }else if ([_endBtn.titleLabel.text isEqualToString:@"请选择城市"]) {
-        [Utilities popUpAlertViewWithMsg:@"请填写抵达城市" andTitle:@"提示" onView:self];
+        [Utilities popUpAlertViewWithMsg:@"请将信息填写完整" andTitle:@"提示" onView:self];
     }else if ([_lowPriceTextField.text isEqualToString:@""]) {
-        [Utilities popUpAlertViewWithMsg:@"请填写最低价格" andTitle:@"提示" onView:self];
+        [Utilities popUpAlertViewWithMsg:@"请将信息填写完整" andTitle:@"提示" onView:self];
     }else if ([_highPriceTextField.text isEqualToString:@""]) {
-        [Utilities popUpAlertViewWithMsg:@"请填写最高价格" andTitle:@"提示" onView:self];
+        [Utilities popUpAlertViewWithMsg:@"请将信息填写完整" andTitle:@"提示" onView:self];
     }else if ([_titleTextField.text isEqualToString:@""]) {
-        [Utilities popUpAlertViewWithMsg:@"请填写标题" andTitle:@"提示" onView:self];
+        [Utilities popUpAlertViewWithMsg:@"请将信息填写完整" andTitle:@"提示" onView:self];
     }else {
         [self offerRequest];
     }

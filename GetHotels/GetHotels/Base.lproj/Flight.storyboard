@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zc9-GH-XxO">
-                                <rect key="frame" x="15" y="124" width="345" height="403"/>
+                                <rect key="frame" x="15" y="124" width="345" height="413"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出发时间段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVr-Ep-iag">
                                         <rect key="frame" x="20" y="40" width="62" height="15"/>
@@ -248,7 +248,7 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6r-Z5-eQL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="tWS-uQ-EyD">
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="tWS-uQ-EyD">
                                         <rect key="frame" x="0.0" y="451" width="375" height="216"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <date key="date" timeIntervalSinceReferenceDate="533118469.29264098">
@@ -284,7 +284,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aircraft" translatesAutoresizingMaskIntoConstraints="NO" id="XMa-ch-HCJ">
-                                <rect key="frame" x="165" y="103" width="45" height="45"/>
+                                <rect key="frame" x="165" y="108" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XMa-ch-HCJ" secondAttribute="height" id="g9Z-Oq-yLp"/>
                                 </constraints>
@@ -298,12 +298,12 @@
                             <constraint firstItem="zc9-GH-XxO" firstAttribute="top" secondItem="32z-Gp-HXI" secondAttribute="bottom" constant="60" id="JgS-Wi-QBv"/>
                             <constraint firstItem="XMa-ch-HCJ" firstAttribute="centerY" secondItem="zc9-GH-XxO" secondAttribute="centerY" constant="-200" id="Rdk-ll-lp1"/>
                             <constraint firstItem="R6r-Z5-eQL" firstAttribute="leading" secondItem="s6t-86-1w1" secondAttribute="leading" id="SKz-Zr-HUb"/>
+                            <constraint firstItem="Zbi-Ox-mxC" firstAttribute="top" secondItem="zc9-GH-XxO" secondAttribute="bottom" constant="20" id="TLI-P8-8nR"/>
                             <constraint firstItem="R6r-Z5-eQL" firstAttribute="top" secondItem="s6t-86-1w1" secondAttribute="top" id="Uws-JY-i93"/>
                             <constraint firstItem="Zbi-Ox-mxC" firstAttribute="leading" secondItem="s6t-86-1w1" secondAttribute="leading" constant="120" id="bCd-b7-Gzb"/>
                             <constraint firstAttribute="trailing" secondItem="R6r-Z5-eQL" secondAttribute="trailing" id="hka-q4-J5m"/>
                             <constraint firstItem="zc9-GH-XxO" firstAttribute="leading" secondItem="s6t-86-1w1" secondAttribute="leading" constant="15" id="hxG-Jm-jat"/>
                             <constraint firstAttribute="trailing" secondItem="zc9-GH-XxO" secondAttribute="trailing" constant="15" id="jJf-R8-Vz2"/>
-                            <constraint firstItem="Zbi-Ox-mxC" firstAttribute="top" secondItem="zc9-GH-XxO" secondAttribute="bottom" constant="30" id="oND-3s-G3k"/>
                             <constraint firstItem="mSu-JX-Eqd" firstAttribute="top" secondItem="Zbi-Ox-mxC" secondAttribute="bottom" constant="80" id="pwr-IV-bt6"/>
                         </constraints>
                     </view>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0817869E765199F5AAC87302 /* libPods-GetHotels.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5048A6BF608474B785FF0EDD /* libPods-GetHotels.a */; };
 		84157A171F55922200FD7CE3 /* PayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84157A161F55922200FD7CE3 /* PayTableViewCell.m */; };
 		84308EF01F4E6F1F00C3EE3D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84308EEF1F4E6F1F00C3EE3D /* DetailViewController.m */; };
 		84308EF31F4E709E00C3EE3D /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84308EF21F4E709E00C3EE3D /* PayViewController.m */; };
@@ -57,10 +58,13 @@
 		84955C801F514C1D00BEF36D /* HotelsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84955C7F1F514C1D00BEF36D /* HotelsModel.m */; };
 		84955C851F517D2000BEF36D /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84955C831F517D2000BEF36D /* Detail.storyboard */; };
 		84955C891F518A7B00BEF36D /* ZLImageViewDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84955C881F518A7B00BEF36D /* ZLImageViewDisplayView.m */; };
+		84D42AF81FCBB7FE00BC8595 /* NoQuotationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D42AF71FCBB7FE00BC8595 /* NoQuotationTableViewCell.m */; };
+		84D42AFC1FCBB83E00BC8595 /* AlreadyOfferTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D42AFB1FCBB83E00BC8595 /* AlreadyOfferTableViewCell.m */; };
+		84D42AFF1FCBB85A00BC8595 /* ClinchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D42AFE1FCBB85A00BC8595 /* ClinchTableViewCell.m */; };
+		84E48CC11FCBEC0C0043E3A4 /* MineFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E48CC01FCBEC0C0043E3A4 /* MineFlightViewController.m */; };
 		84FCE2641F53FBDF00E9416A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84FCE2631F53FBDF00E9416A /* Localizable.strings */; };
 		EE93EE001F503D0500B56183 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE93EDFF1F503D0500B56183 /* UserModel.m */; };
 		EEA0376B1F529519004519E6 /* MyHotelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0376A1F529519004519E6 /* MyHotelsViewController.m */; };
-		EEA0376F1F529DE4004519E6 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0376E1F529DE4004519E6 /* HMSegmentedControl.m */; };
 		EEA0C0D61F4D3D99000BA9F7 /* GetHotels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEA0C0D41F4D3D99000BA9F7 /* GetHotels.xcdatamodeld */; };
 		EEA0C0E21F4D3EEF000BA9F7 /* Flight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA0C0D81F4D3EEF000BA9F7 /* Flight.storyboard */; };
 		EEA0C0E31F4D3EEF000BA9F7 /* Hotels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA0C0DA1F4D3EEF000BA9F7 /* Hotels.storyboard */; };
@@ -189,14 +193,20 @@
 		84955C841F517D2000BEF36D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
 		84955C871F518A7B00BEF36D /* ZLImageViewDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLImageViewDisplayView.h; sourceTree = "<group>"; };
 		84955C881F518A7B00BEF36D /* ZLImageViewDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLImageViewDisplayView.m; sourceTree = "<group>"; };
+		84D42AF61FCBB7FE00BC8595 /* NoQuotationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoQuotationTableViewCell.h; sourceTree = "<group>"; };
+		84D42AF71FCBB7FE00BC8595 /* NoQuotationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoQuotationTableViewCell.m; sourceTree = "<group>"; };
+		84D42AFA1FCBB83E00BC8595 /* AlreadyOfferTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlreadyOfferTableViewCell.h; sourceTree = "<group>"; };
+		84D42AFB1FCBB83E00BC8595 /* AlreadyOfferTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlreadyOfferTableViewCell.m; sourceTree = "<group>"; };
+		84D42AFD1FCBB85A00BC8595 /* ClinchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClinchTableViewCell.h; sourceTree = "<group>"; };
+		84D42AFE1FCBB85A00BC8595 /* ClinchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClinchTableViewCell.m; sourceTree = "<group>"; };
 		84D89D0D1F4BBC2C00A4FE15 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		84E48CBF1FCBEC0C0043E3A4 /* MineFlightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineFlightViewController.h; sourceTree = "<group>"; };
+		84E48CC01FCBEC0C0043E3A4 /* MineFlightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineFlightViewController.m; sourceTree = "<group>"; };
 		84FCE2631F53FBDF00E9416A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		EE93EDFE1F503D0500B56183 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		EE93EDFF1F503D0500B56183 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		EEA037691F529519004519E6 /* MyHotelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHotelsViewController.h; sourceTree = "<group>"; };
 		EEA0376A1F529519004519E6 /* MyHotelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHotelsViewController.m; sourceTree = "<group>"; };
-		EEA0376D1F529DE4004519E6 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
-		EEA0376E1F529DE4004519E6 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		EEA0C0D51F4D3D99000BA9F7 /* GetHotels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GetHotels.xcdatamodel; sourceTree = "<group>"; };
 		EEA0C0D91F4D3EEF000BA9F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GetHotels/Base.lproj/Flight.storyboard; sourceTree = SOURCE_ROOT; };
 		EEA0C0DB1F4D3EEF000BA9F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GetHotels/Base.lproj/Hotels.storyboard; sourceTree = SOURCE_ROOT; };
@@ -224,6 +234,7 @@
 				845A53A71F4B12B00006D53C /* libz.tbd in Frameworks */,
 				845A53A61F4B12A60006D53C /* CoreMotion.framework in Frameworks */,
 				845A53A51F4B129A0006D53C /* CoreTelephony.framework in Frameworks */,
+				0817869E765199F5AAC87302 /* libPods-GetHotels.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +328,8 @@
 				EEBA13E11F4EFC42002C265B /* RegeditViewController.m */,
 				EEA037691F529519004519E6 /* MyHotelsViewController.h */,
 				EEA0376A1F529519004519E6 /* MyHotelsViewController.m */,
+				84E48CBF1FCBEC0C0043E3A4 /* MineFlightViewController.h */,
+				84E48CC01FCBEC0C0043E3A4 /* MineFlightViewController.m */,
 			);
 			name = MyInfo;
 			sourceTree = "<group>";
@@ -387,7 +400,6 @@
 		845A53A01F4B127D0006D53C /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
-				EEA0376C1F529DE4004519E6 /* HMSegmentedControl */,
 				84955C861F518A7B00BEF36D /* ZLImageViewDisplay */,
 				845A53A11F4B127D0006D53C /* SCZ-BasicEncodingRules */,
 			);
@@ -491,6 +503,19 @@
 			path = ZLImageViewDisplay;
 			sourceTree = "<group>";
 		};
+		84D42AF91FCBB80E00BC8595 /* MyAir */ = {
+			isa = PBXGroup;
+			children = (
+				84D42AF61FCBB7FE00BC8595 /* NoQuotationTableViewCell.h */,
+				84D42AF71FCBB7FE00BC8595 /* NoQuotationTableViewCell.m */,
+				84D42AFA1FCBB83E00BC8595 /* AlreadyOfferTableViewCell.h */,
+				84D42AFB1FCBB83E00BC8595 /* AlreadyOfferTableViewCell.m */,
+				84D42AFD1FCBB85A00BC8595 /* ClinchTableViewCell.h */,
+				84D42AFE1FCBB85A00BC8595 /* ClinchTableViewCell.m */,
+			);
+			name = MyAir;
+			sourceTree = "<group>";
+		};
 		ADE41178B750A486EDBFC84C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,18 +543,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EEA0376C1F529DE4004519E6 /* HMSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				EEA0376D1F529DE4004519E6 /* HMSegmentedControl.h */,
-				EEA0376E1F529DE4004519E6 /* HMSegmentedControl.m */,
-			);
-			path = HMSegmentedControl;
-			sourceTree = "<group>";
-		};
 		EEA0C0D71F4D3EE6000BA9F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84D42AF91FCBB80E00BC8595 /* MyAir */,
 				84955C781F5134C700BEF36D /* Hotels */,
 				EEA0C0ED1F4DA233000BA9F7 /* MyinfoView */,
 				84955C831F517D2000BEF36D /* Detail.storyboard */,
@@ -765,26 +782,29 @@
 				EE93EE001F503D0500B56183 /* UserModel.m in Sources */,
 				845A539C1F4B12660006D53C /* NSString+Crypt.m in Sources */,
 				845A53901F4B12660006D53C /* DataVerifier.m in Sources */,
-				EEA0376F1F529DE4004519E6 /* HMSegmentedControl.m in Sources */,
 				845A53151F4B0E2F0006D53C /* HotelsViewController.m in Sources */,
 				845A53961F4B12660006D53C /* AppAPIClient.m in Sources */,
 				84955C801F514C1D00BEF36D /* HotelsModel.m in Sources */,
+				84D42AF81FCBB7FE00BC8595 /* NoQuotationTableViewCell.m in Sources */,
 				845A538F1F4B12660006D53C /* DataSigner.m in Sources */,
 				845A53A41F4B127D0006D53C /* BasicEncodingRules.m in Sources */,
 				845A530E1F4B0D120006D53C /* Order.m in Sources */,
 				EEBA13E21F4EFC42002C265B /* RegeditViewController.m in Sources */,
+				84E48CC11FCBEC0C0043E3A4 /* MineFlightViewController.m in Sources */,
 				84157A171F55922200FD7CE3 /* PayTableViewCell.m in Sources */,
 				845A539E1F4B12660006D53C /* StorageMgr.m in Sources */,
 				84955C891F518A7B00BEF36D /* ZLImageViewDisplayView.m in Sources */,
 				845A53941F4B12660006D53C /* RSADataSigner.m in Sources */,
+				84D42AFF1FCBB85A00BC8595 /* ClinchTableViewCell.m in Sources */,
 				845A53991F4B12660006D53C /* NSData+Base64.m in Sources */,
 				84525ACE1FC69527004BA062 /* FlightModel.m in Sources */,
 				84510FA61FC7BF7B007371A7 /* TabbarViewController.m in Sources */,
 				EEA0C0D61F4D3D99000BA9F7 /* GetHotels.xcdatamodeld in Sources */,
 				845A53911F4B12660006D53C /* MD5DataSigner.m in Sources */,
-				EEA0376B1F529519004519E6 /* MyHotelsViewController.m in Sources */,
 				847E01F61F4DAB0F00F12E56 /* loginViewController.m in Sources */,
 				845A539A1F4B12660006D53C /* NSDate+Utility.m in Sources */,
+				84D42AFC1FCBB83E00BC8595 /* AlreadyOfferTableViewCell.m in Sources */,
+				EEA0376B1F529519004519E6 /* MyHotelsViewController.m in Sources */,
 				EEA0C0F01F4DA291000BA9F7 /* MyInfoTableViewCell.m in Sources */,
 				845A539F1F4B12660006D53C /* Utilities.m in Sources */,
 				84955C7B1F5134FA00BEF36D /* HotelsTableViewCell.m in Sources */,

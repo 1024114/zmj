@@ -75,7 +75,7 @@
     [self netRequest];
   
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkCityState:) name:@"ResetHome" object:nil];
-
+    
 }
 
 - (void)didReceiveMemoryWarning {

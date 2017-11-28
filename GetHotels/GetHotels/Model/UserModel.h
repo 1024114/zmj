@@ -14,6 +14,8 @@
 @property(strong,nonatomic)NSString *idCard;
 @property(strong,nonatomic)NSString * nick_name;
 @property(strong,nonatomic)NSString *userId;
+@property(strong,nonatomic)NSString *state;
+@property(strong,nonatomic)NSString *openid;
 
 -(id)initWithDictionary:(NSDictionary *)dict;
 @end
